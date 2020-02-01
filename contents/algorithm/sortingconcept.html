@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/commonhome.css">
+<link rel="stylesheet" type="text/css" href="css/ictpage2.css">
+	
+	<title>ict</title>
+</head>
+<body>
+<div class="heading">
+		<div class="namelogo">
+			<a href="../../index.html">
+        	   <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+        	</a>
+        	<div class="headmenu">
+        		<ul>
+        			<li><a href="">Learn</a></li>
+        			<li><a href="">Latest</a></li>
+        			<li><a href="">Technology</a></li>
+        		</ul>
+        	</div>
+        </div>
+        <center>
+        <div class="navigation">
+		<div class="menubar">
+			<ul>
+				<li><a href="../../index.html">Home</a></li>	
+				<li><a href="../../Digitalization.html">Digitalization</a></li>
+				<li><a href="" id="active2" >Visualization</a>
+					<ul>
+						<li><a href="sortings.html">Sortings</a></li>
+						<li><a href="graph.html">Graph</a> 
+						</li>
+						<li><a href="other.html">Other</a></li>
+					</ul>
+				</li>
+				<li><a href="">E-Learning</a>
+					<ul>	
+						<li><a href="../../elearning.html">Live Class</a>
+						<li><a href = "../../courses.html">Courses</a></li>
+					</ul>
+				</li>	
+				<li><a href="../../aboutus.html">About Us</a>
+					
+				</li>
+			</ul>
+				
+		</div>
+		</div>
+	</center>
+	</div>
+
+
+
+
+
+<div class="webcontents">
+	
+	<div class="contents clear ">
+		<div class="topic1 clear">
+
+
+			<div class="t1"> 
+				<h2>সর্টিং(কনসেপ্ট)</h2>
+				<div class="int1">
+					<div class="insidet1 clear">
+						<p><b>Insertion sort</b><br><br>
+							Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. However, insertion sort provides several advantages:<br><br>
+							Simple implementation: Jon Bentley shows a three-line C version, and a five-line optimized version.<br>
+Efficient for (quite) small data sets, much like other quadratic sorting algorithms<br>
+More efficient in practice than most other simple quadratic (i.e., O(n2)) algorithms such as selection sort or bubble sort<br>
+Adaptive, i.e., efficient for data sets that are already substantially sorted: the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position.<br>
+Stable; i.e., does not change the relative order of elements with equal keys.<br>
+In-place; i.e., only requires a constant amount O(1) of additional memory space.<br>
+Online; i.e., can sort a list as it receives it.<br>
+
+
+<br><br><b>Process : </b>Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.<br>
+
+Sorting is typically done in-place, by iterating up the array, growing the sorted list behind it. At each array-position, it checks the value there against the largest value in the sorted list (which happens to be next to it, in the previous array-position checked). If larger, it leaves the element in place and moves to the next. If smaller, it finds the correct position within the sorted list, shifts all the larger values up to make a space, and inserts into that correct position.<br><br><br>
+<b>Bubblesort</b><br><br>Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort.[2] Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.<br><br>
+<b>Process : </b><br>
+Take an array of numbers " 5 1 4 2 8", and sort the array from lowest number to greatest number using bubble sort. In each step, elements written in bold are being compared. Three passes will be required;<br>
+
+First Pass<br>
+( 5 1 4 2 8 ) → ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.<br>
+( 1 5 4 2 8 ) → ( 1 4 5 2 8 ), Swap since 5 > 4<br>
+( 1 4 5 2 8 ) → ( 1 4 2 5 8 ), Swap since 5 > 2<br>
+( 1 4 2 5 8 ) → ( 1 4 2 5 8 ), Now, since these elements are <br>already in order (8 > 5), algorithm does not swap them.<br>
+Second Pass<br>
+( 1 4 2 5 8 ) → ( 1 4 2 5 8 )<br>
+( 1 4 2 5 8 ) → ( 1 2 4 5 8 ), Swap since 4 > 2<br>
+( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br>
+( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br>
+Now, the array is already sorted, but the algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.<br><br>
+
+Third Pass<br>
+( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br>
+( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br>
+( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br>
+( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br><br><br>
+
+
+
+<br><b>Mergesort</b><br><br>In computer science, merge sort (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945.[2] A detailed description and analysis of bottom-up mergesort appeared in a report by Goldstine and von Neumann as early as 1948.<br><br>
+<b>Concept</b><br>Conceptually, a merge sort works as follows:<br>
+
+Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).<br>
+Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.<br><br><br>
+<b>Heapsort</b>
+<br><br>In computer science, heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.<br>
+
+Although somewhat slower in practice on most machines than a well-implemented quicksort, it has the advantage of a more favorable worst-case O(n log n) runtime. Heapsort is an in-place algorithm, but it is not a stable sort.<br>
+
+Heapsort was invented by J. W. J. Williams in 1964.[2] This was also the birth of the heap, presented already by Williams as a useful data structure in its own right.[3] In the same year, R. W. Floyd published an improved version that could sort an array in-place, continuing his earlier research into the treesort algorithm.<br>
+<br>The heapsort algorithm can be divided into two parts.<br>
+
+In the first step, a heap is built out of the data. The heap is often placed in an array with the layout of a complete binary tree. The complete binary tree maps the binary tree structure into the array indices; each array index represents a node; the index of the node's parent, left child branch, or right child branch are simple expressions. For a zero-based array, the root node is stored at index 0; if i is the index of the current node, then
+<br>
+
+In the second step, a sorted array is created by repeatedly removing the largest element from the heap (the root of the heap), and inserting it into the array. The heap is updated after each removal to maintain the heap property. Once all objects have been removed from the heap, the result is a sorted array.
+<br>
+Heapsort can be performed in place. The array can be split into two parts, the sorted array and the heap. The storage of heaps as arrays is diagrammed here. The heap's invariant is preserved after each extraction, so the only cost is that of extraction.<br>
+<br><br><br>
+<b>Countingsort</b><br><br>In computer science, counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently.<br>
+
+Because counting sort uses key values as indexes into an array, it is not a comparison sort, and the Ω(n log n) lower bound for comparison sorting does not apply to it.[1] Bucket sort may be used for many of the same tasks as counting sort, with a similar time analysis; however, compared to counting sort, bucket sort requires linked lists, dynamic arrays or a large amount of preallocated memory to hold the sets of items within each bucket, whereas counting sort instead stores a single number (the count of items) per bucket.<br><br>
+		      			 </p>
+					</div>
+
+				</div>
+			</div>
+
+			<br>
+
+
+
+			<br>
+			
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="latest clear">
+			<div class="newsfeed">
+				<div class="head">
+					<h2>আরো দেখুন</h2>
+				</div>
+				<div class="para">
+					<p><a href="sortings.html">সর্টিং ভিজুয়ালাইজাশন...</a></p>
+				</div>
+			</div>
+
+
+
+
+			
+					</div>
+
+
+
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>

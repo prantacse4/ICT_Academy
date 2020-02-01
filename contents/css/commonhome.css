@@ -1,0 +1,246 @@
+body{
+    padding:0px;
+    margin :0px;
+    height: 100%;
+   
+}
+a{
+	text-decoration: none;
+}
+#logo_img {
+
+    max-height: 62px;
+    margin-top: 3px;
+    margin-left: 42px;
+}
+
+.namelogo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    
+}
+.heading {
+    position: fixed;
+    height: 94px;
+    border-block-end: 1px dotted red;
+    background: #C8E6C9;
+    border-block-start: 1px dotted white;
+    position: fixed;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.navigation{
+    background: #c0cfbd;
+}
+.headmenu{
+    font: normal normal normal 36px/1em 'Century Gothic', sans-serif;
+    display: inline-block;
+
+
+}
+.headmenu ul{
+        margin:0px;
+    padding:0px;
+    list-style: none;
+    }
+
+    .headmenu ul li {
+    float: left;
+    width: 51px;
+    height: 23px;
+    color: white;
+    line-height: 13px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.headmenu ul li a {
+
+    text-decoration: none;
+    color: #000;
+    display: block;
+
+}
+.headmenu ul li a:hover {
+
+    color: #2b59a1;
+
+}
+
+
+
+
+
+.menubar {
+    font: normal normal normal 36px/1em 'Century Gothic', sans-serif;
+    
+    display: inline-block;
+    background: #b8c9b9b3;
+}
+.menubar ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+.menubar ul li {
+    float: left;
+    width: 150px;
+    height: 23px;
+    color: white;
+
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 0px;
+}
+.menubar ul li a {
+
+    text-decoration: none;
+    background: #b8c9b9b3;
+    color: #000;
+    display: block;
+
+}
+.menubar ul li a:hover {
+
+    background: #8e958e;
+    color: #fff;
+
+}
+.menubar ul li a:focus {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font: normal normal normal 18px/23px 'Century Gothic', sans-serif;
+    color: #000;
+    background: repeat-x url("cover/images/banner_bg.jpg") 0 -94px ;
+    transition-duration: 1s;
+}
+
+
+.menubar ul li ul li{
+    display:none;
+    margin-top: 1px;
+
+}
+.menubar ul li:hover ul li{
+    display: block;
+}
+.content2
+
+.content2 {
+    font: normal normal normal 36px/1em 'Century Gothic', sans-serif;
+    
+    display: inline-block;
+    background: #b8c9b9b3;
+}
+.content2 ul{
+    margin:2px;
+    padding:5px;
+    list-style: none;
+}
+.content2 ul li {
+    margin: 5px;
+    width: 150px;
+    height: 23px;
+    color: white;
+    opacity: .8;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 0px;
+}
+.content2 ul li a {
+
+    text-decoration: none;
+    background: #b8c9b9b3;
+    color: #000;
+    display: block;
+
+}
+.content2 ul li a:hover {
+    padding-left: 20px;
+    background: #8e958e;
+    color: #fff;
+
+}
+.content2 ul li a:focus {
+    padding-left: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font: normal normal normal 18px/23px 'Century Gothic', sans-serif;
+    color: #000;
+    background: repeat-x url("cover/images/banner_bg.jpg") 0 -94px ;
+    transition-duration: 1s;
+}
+
+
+.content2 ul li ul li{
+    padding-left: 20px;
+    float:right;
+    display:none;
+    margin-top: 1px;
+
+}
+.content2 ul li:hover ul li{
+    display: block;
+}
+#active {
+    background: #c83233;
+    color: #fff;
+}
+
+
+
+
+.footer {
+    border-top: 3px solid #FFDB05;
+    margin: 0px;
+    width: 100%;
+    background: #333;
+    height: 104px;
+    padding: 0px;
+}
+.footer img {
+    float: left;
+    height: 47%;
+    width: 18%;
+    margin-left: 13%;
+    margin-top: 2%;
+}
+.footer p {
+    float: right;
+    font-size: 14px;
+    color: #FFDB05;
+    margin-top: 72px;
+    margin-right: 16px;
+}
+.footer h2 {
+    float: left;
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 26px;
+    color: #545454;
+}
+
+
+.webcontents{
+
+    height: 100%;
+    padding-top: 95px;
+    padding-bottom: 0px;
+
+
+}
+.contents{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border:1px dotted grey;
+  border-radius: 5px;
+  height: 100%;
+
+    }
+

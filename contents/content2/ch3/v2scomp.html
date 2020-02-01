@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="../../../css/commonhome.css">
+    <link rel="stylesheet" type="text/css" href="../css/data.css">
+    <title>ict</title>
+</head>
+<body>
+
+
+    <div class="heading">
+        <div class="namelogo">
+            <a href="../../../index.html">
+               <img src="../../../img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+            </a>
+            <div class="headmenu">
+                <ul>
+                    <li><a href="">Learn</a></li>
+                    <li><a href="">Latest</a></li>
+                    <li><a href="">Technology</a></li>
+                </ul>
+            </div>
+        </div>
+        <center>
+        <div class="navigation">
+        <div class="menubar">
+            <ul>
+                <li><a href="../../../index.html">Home</a></li> 
+                <li><a href="../../../Digitalization.html">Digitalization</a></li>
+                <li><a  href="../../algorithm/visualization.html">Visualization</a>
+                    <ul>
+                        <li><a href="../../algorithm/sortings.html">Sortings</a></li>
+                        <li><a href="../../algorithm/graph.html">Graph</a> 
+                        </li>
+                        <li><a href="../../algorithm/other.html">Other</a></li>
+                    </ul>
+                </li>
+                <li><a href="">E-Learning</a>
+                    <ul>    
+                        <li><a href="../../../elearning.html">Live Class</a>
+                        <li><a href = "../../../courses.html">Courses</a></li>
+                    </ul>
+                </li>   
+                <li><a href="../../../aboutus.html">About Us</a>
+                </li>
+            </ul>
+                
+        </div>
+        </div>
+    </center>
+    </div>  
+    <div class="webcontents">
+
+        <div class="contents">
+            <center>
+                <h1>Adding 2's Complement</h1>
+
+                <div>
+
+                    <svg width='800px' height='650px'>
+                        <g style="font-size: 20px;">
+                            <defs>
+                                <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3"
+                                    orient="auto-start-reverse" markerUnits="strokeWidth">
+                                    <path id="ar" d="M0,0 L0,6 L9,3 z" fill="none" />
+                                   
+                                </marker>
+                                <marker id="arrow2" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto-start-reverse"
+                                    markerUnits="strokeWidth">
+                                    <path id="ar2" d="M0,0 L0,6 L9,3 z" fill="none" />
+                                    
+                                </marker>
+                                <marker id="arrow3" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto-start-reverse"
+                                    markerUnits="strokeWidth">
+                                    <path id="ar3" d="M0,0 L0,6 L9,3 z" fill="none" />
+                                   
+                                </marker>
+                            </defs>
+                            <text id="tm1" x="-3470" y="35" style="text-anchor: middle;">
+                                Addition of (+25)<tspan style="font-size: 14px;" baseline-shift="sub">
+                                    10
+                                </tspan>  &amp; (+12)<tspan style="font-size: 14px;" baseline-shift="sub">
+                                   10
+                                </tspan> using 2's Complement for 8 bit Register.
+                               
+                                
+                            </text>
+                            <text id="d2" x="-3400" y="120" style="text-anchor: middle;">(+25)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    10
+                                </tspan>:&nbsp;&nbsp;
+                                (00011001)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    2
+                                </tspan>
+                            </text>
+
+                            <text id="d3" x="-3400" y="150" style="text-anchor: middle;">(-12)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    10
+                                </tspan>&nbsp;:&nbsp;&nbsp;
+                                (11110100)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    2
+                                </tspan>
+                            </text>
+
+                            <text id="d4" x="-3400" y="210" style="text-anchor: middle;">(+13)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    10
+                                </tspan>:&nbsp;
+                                1(00001101)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    2
+                                </tspan>
+                            </text>
+                           
+
+                            
+
+
+
+                            <line id="ln1" x1="50" y1="180" x2="300" y2="180" stroke-width="2" />
+
+
+
+                            <text id="d5" x="-3400" y="135" style="text-anchor: middle;">(+12)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    10
+                                </tspan>:&nbsp;&nbsp;
+                                (00001100)
+                                <tspan style="font-size: 14px;" baseline-shift="sub">
+                                    2
+                                </tspan>
+                            </text>
+                            <text id="d6" x="-3400" y="165">
+                               
+                                11110011  &nbsp; &nbsp;&nbsp;(1's Complement)
+                            </text>
+
+                            <text id="d7" x="-3400" y="190">
+                            
+                                1</text>
+                            <text id="d8" x="-3400" y="240">
+                            (-12)
+                            <tspan style="font-size: 14px;" baseline-shift="sub">
+                            10
+                            </tspan>:&nbsp; &nbsp;
+                                (11110100)
+                            <tspan style="font-size: 14px;" baseline-shift="sub">
+                                2
+                            </tspan> &nbsp; &nbsp;&nbsp;(2's Complement)</text>
+
+                            <text id="d9" x="-3400" y="295">
+                            
+                                Sign Bit</text>
+
+                            <text id="d10" x="-3400" y="270">
+                            
+                                (Carry Bit)</text>
+                            
+                            <text id="d11" x="-3400" y="270">
+                                
+                                (Sign Bit)</text>
+                            
+                            
+
+                            <line id="ln2" x1="380" y1="210" x2="600" y2="210" stroke-width="2" />
+                            <line id="ln3" x1="482" y1="260" x2="480" y2="280" stroke-width="2" marker-start="url(#arrow)" />
+
+                            <line id="ln4" x1="155" y1="230" x2="140" y2="250" stroke-width="2" marker-start="url(#arrow2)" />
+                            <line id="ln5" x1="194" y1="230" x2="200" y2="250" stroke-width="2" marker-start="url(#arrow3)" />
+                            <text id="ans" x="-5000" y="370">&there4;&nbsp;&nbsp;
+                                Answer&nbsp;: &nbsp;(00001101)<tspan style="font-size: 14px;" baseline-shift="sub">
+                                    2
+                                </tspan> or (+13)<tspan style="font-size: 14px;" baseline-shift="sub">
+                                    10
+                                </tspan>. Because the sign bit is 0.
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </center>
+        </div>
+    </div>
+
+<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+<div class="footer">
+    <img src="../../../img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+                <script>
+                    function func1() {
+                        tm1.setAttribute("x", 350);
+                    }
+                    function func2() {
+                        d2.setAttribute("x", 180);
+                    }
+                    function func3() {
+                            d5.setAttribute("x", 480);
+                        }
+                    function func4() {
+                            d6.setAttribute("x", 480);
+                            }
+                     function func5() {
+                     d7.setAttribute("x", 547);
+                    }
+                    function func6() {
+                           document.getElementById("ln2").style.stroke = 'black';
+                    }
+                    function func7() {
+                            d8.setAttribute("x", 383);
+                        }
+
+                        function func8() {
+                                document.getElementById("ar").style.fill = 'black';
+                            document.getElementById("ln3").style.stroke = 'black';
+                            }
+                    function func9() {
+                        d9.setAttribute("x",455);
+                    }
+
+                    function func10() {
+                        d3.setAttribute("x", 180);  
+                    }
+                   function func11() {
+                       document.getElementById("ln1").style.stroke = 'black';
+                   }
+                    function func12() {
+                        d4.setAttribute("x", 180);
+                    }
+                    function func13() {
+                         document.getElementById("ar2").style.fill = 'black';
+                        document.getElementById("ln4").style.stroke = 'black';
+                        document.getElementById("ar3").style.fill = 'black';
+                        document.getElementById("ln5").style.stroke = 'black';
+                    }
+                    function func14() {
+                            d10.setAttribute("x", 90);
+                            d11.setAttribute("x", 190);
+                        }
+                    function func15() {
+                    ans.setAttribute("x", 100);
+                      }
+                    
+
+                    setTimeout(func1, 1000);
+                    setTimeout(func2, 3000);
+                    setTimeout(func3, 5000);
+                    setTimeout(func4, 7000);
+                    setTimeout(func5, 9000);
+                    setTimeout(func6, 10000);
+                    setTimeout(func7, 11000);
+                     setTimeout(func8, 12000);
+                      setTimeout(func9, 13000);
+                       setTimeout(func10, 14000);
+                        setTimeout(func11, 16000);
+                         setTimeout(func12, 17000);
+
+                         setTimeout(func13, 19000);
+                         setTimeout(func14, 20000);
+                         setTimeout(func15, 22000);
+                         
+                        
+               
+                
+                </script>

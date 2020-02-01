@@ -1,0 +1,155 @@
+.topic1{
+	padding:20px;
+}
+.t1{
+	float: left;
+	width: 95%;
+	display: block;
+	overflow: hidden;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 7px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,.12);
+	margin-bottom: 35px;
+}
+
+.clear{
+	overflow: hidden;
+}
+.topic1{
+	float:left;
+	display: block;
+	width: 76%;
+	
+	
+}
+
+
+
+.latest {
+    float: left;
+    width: 19%;
+    display: block;
+    margin-top: 20px;
+    
+}
+.newsfeed{
+	border: 1px dotted #cecece;
+    border-radius: 4px;
+    margin-bottom: 13px;
+
+}
+.head{
+
+}
+.head h2 {
+    text-align: center;
+border-block-end: 1px solid #c0cfbd;
+padding-top: 6px;
+padding-bottom: 8px;
+color: #5b5b5b;
+margin-bottom: 0px;
+font-size: 18px;
+font-family: sans-serif;
+background: #c8e6c94d;
+margin-top: 0px;
+}
+.para {
+    color: #939393;
+    text-align: justify;
+    padding: 8px;
+}
+.para p{
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 6px;
+	font-size: 15px;
+
+}
+.para p a{
+	text-decoration: none;
+	color:black;
+}
+.para p a:hover {
+    text-decoration: blink;
+    color: #09750c;
+}
+
+.topic1 a {
+    text-decoration: none;
+}
+.topic1 a:hover {
+    text-decoration: blink;
+    color: #09750c;
+}
+#m1{
+	font-size: 14px;
+	margin-left: 6px;
+	color: #5e5e5e;
+
+}
+#m2{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 24px;
+	
+}
+#m1 a{
+	color: #e28b60;
+}
+#m2 a{
+	color: #5e5e5e;
+}
+#m1 a:hover{
+	color: #bf581b;
+}
+#m2 a:hover{
+	color: #c58989;
+}
+
+.int1{
+
+}
+.t1 h2 {
+    padding-left: 10px;
+    font-weight: inherit;
+    border: 1px solid #fad9a1;
+    height: 28px;
+    margin: 0px;
+    padding: 0px;
+    margin: 10px;
+    color: #636cb2;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 23px;
+}
+.insidet1{
+	width:100%;
+	float: left;
+	display: block;
+
+}
+.insidet1 p {
+    line-height: 31px;
+    text-align: justify;
+    padding: 15px;
+        color: #515151;
+}
+.insidet2{
+	width: 25%;
+	float: right;
+	display: block;
+	margin-top: 4%;
+	
+}
+.insidet2 img {
+    height: 182px;
+    width: 95%;
+    border-radius: 5px;
+        margin-bottom: 14px;
+}

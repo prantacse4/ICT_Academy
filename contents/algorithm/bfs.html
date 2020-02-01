@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/commonhome.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/algo.css">
+
+  <title>ict</title>
+</head>
+<body>
+
+
+  <div class="heading">
+    <div class="namelogo">
+      <a href="../../index.html">
+             <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+          </a>
+          <div class="headmenu">
+            <ul>
+              <li><a href="">Learn</a></li>
+              <li><a href="">Latest</a></li>
+              <li><a href="">Technology</a></li>
+            </ul>
+          </div>
+        </div>
+        <center>
+        <div class="navigation">
+    <div class="menubar">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>  
+        <li><a href="../../Digitalization.html">Digitalization</a></li>
+        <li><a href="" id="active2" >Visualization</a>
+          <ul>
+            <li><a href="sortings.html">Sortings</a></li>
+            <li><a href="graph.html">Graph</a> 
+            </li>
+            <li><a href="other.html">Other</a></li>
+          </ul>
+        </li>
+        <li><a href="">E-Learning</a>
+          <ul>  
+            <li><a href="../../elearning.html">Live Class</a>
+            <li><a href = "../../courses.html">Courses</a></li>
+          </ul>
+        </li> 
+        <li><a href="../../aboutus.html">About Us</a>
+          
+        </li>
+      </ul>
+        
+    </div>
+    </div>
+  </center>
+  </div>
+
+
+
+
+
+<div class="webcontents">
+  
+  <div class="contents clear ">
+    
+
+
+
+
+    <center>
+    <div class="svg">
+        <p id="name">BFS Algorithm Visualization</p>
+        <button id = "btn1"  onclick = "disableButton(this);startAnimation();">Start</button><br>
+    
+    <br>
+		<svg  width='700px' height='500px'>
+
+  		<g class='bars' >
+
+        <line id="st" x1="344" y1="50" x2="244" y2="120" style="stroke:grey;stroke-width:4" />
+        <line id="su" x1="344" y1="50" x2="444" y2="120" style="stroke:grey;stroke-width:4" />
+        <line id="sx" x1="344" y1="50" x2="344" y2="310" style="stroke:grey;stroke-width:4" />
+        <line id="uv" x1="444" y1="120" x2="244" y2="230" style="stroke:grey;stroke-width:4" />
+        <line id="xv" x1="244" y1="230" x2="344" y2="310" style="stroke:grey;stroke-width:4" />
+        <line id="xw" x1="344" y1="310" x2="444" y2="230" style="stroke:grey;stroke-width:4" />
+        
+      <circle id="s" cx="344" cy="50" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="t" cx="244" cy="120" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="u" cx="444" cy="120" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="v" cx="244" cy="230" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="w" cx="444" cy="230" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+      <circle id="x" cx="344" cy="310" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+
+        <rect x="150" y="380" width="60" height="40" style="fill:grey;stroke:black;stroke-width:2;opacity:0.7"></rect>
+        <rect x="210" y="380" width="60" height="40" style="fill:grey;stroke:black;stroke-width:2;opacity:0.7"></rect>
+        <rect x="270" y="380" width="60" height="40" style="fill:grey;stroke:black;stroke-width:2;opacity:0.7"></rect>
+        <rect x="330" y="380" width="60" height="40" style="fill:grey;stroke:black;stroke-width:2;opacity:0.7"></rect>
+        <rect x="390" y="380" width="60" height="40" style="fill:grey;stroke:black;stroke-width:2;opacity:0.7"></rect>
+        <rect x="450" y="380" width="60" height="40" style="fill:grey;stroke:black;stroke-width:2;opacity:0.7"></rect>
+
+
+        <text x="330" y="406" fill="white" style="text-anchor: middle;opacity:0.4">QUEUE</text>
+
+
+
+        <text id="ts" x="180" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">S</text>
+        <text id="tt" x="180" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">T</text>
+        <text id="tx" x="180" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">X</text>
+        <text id="tu" x="180" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">U</text>
+        <text id="tv" x="180" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">V</text>
+        <text id="tw" x="180" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">W</text>
+
+        
+        
+        
+        
+        <text id="tx2" x="240" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">X</text>
+        <text id="tu2" x="240" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">U</text>
+        <text id="tv2" x="240" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">V</text>
+        <text id="tw2" x="240" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">W</text>
+
+        <text id="tu3" x="300" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">U</text>
+        <text id="tw3" x="300" y="405" fill="rgba(0,0,0,0)" style="text-anchor: middle">W</text>
+
+
+
+
+
+      <text x="344" y="55" fill="white" style="text-anchor: middle">S</text>
+      <text x="244" y="125" fill="white" style="text-anchor: middle">T</text>
+      <text x="444" y="125" fill="white" style="text-anchor: middle">U</text>
+      <text x="244" y="235" fill="white" style="text-anchor: middle">V</text>
+      <text x="444" y="235" fill="white" style="text-anchor: middle">W</text>
+      <text x="344" y="315" fill="white" style="text-anchor: middle">X</text>
+
+
+  
+   	
+          
+  		 
+  		</g>
+</svg>
+
+</div>
+
+</center>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+       
+
+    var timerFunction = null;
+
+    function func1(){
+      document.getElementById("s").style.fill = 'grey';
+      document.getElementById("ts").style.fill = 'white';
+    }
+
+    function func11(){
+      document.getElementById("st").style.stroke = 'black';
+    }
+    function func12(){
+      document.getElementById("sx").style.stroke = 'black';
+    }
+    function func13(){
+      document.getElementById("su").style.stroke = 'black';
+    }
+    function func14(){
+      document.getElementById("s").style.fill = '#1f8d8d';
+      document.getElementById("ts").style.fill = 'rgba(0,0,0,0)';
+    }
+    function func15(){
+      document.getElementById("t").style.fill = 'grey';
+      document.getElementById("u").style.fill = 'grey';
+      document.getElementById("x").style.fill = 'grey';
+    }
+    function func16(){
+      document.getElementById("tt").style.fill = 'white';
+      document.getElementById("tx2").style.fill = 'white';
+      document.getElementById("tu3").style.fill = 'white';
+
+    }
+    function func17(){
+      document.getElementById("t").style.fill = '#1f8d8d';
+      document.getElementById("tt").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tx2").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tu3").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tx").style.fill = 'white';
+      document.getElementById("tu2").style.fill = 'white';
+
+    }
+    function func18(){
+      document.getElementById("xv").style.stroke = 'black';
+    }
+    function func19(){
+      document.getElementById("xw").style.stroke = 'black';
+    }
+
+    function func20(){
+      document.getElementById("x").style.fill = '#1f8d8d';
+      document.getElementById("tx").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tu2").style.fill = 'rgba(0,0,0,0)';
+    }
+    function func21(){
+      document.getElementById("v").style.fill = 'grey';
+      document.getElementById("w").style.fill = 'grey';
+    }
+    function func22(){
+      document.getElementById("tu").style.fill = 'white';
+      document.getElementById("tv2").style.fill = 'white';
+      document.getElementById("tw3").style.fill = 'white';
+
+    }
+
+    function func23(){
+      document.getElementById("tu").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tv2").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tw3").style.fill = 'rgba(0,0,0,0)';
+
+    }
+    function func24(){
+      document.getElementById("u").style.fill = '#1f8d8d';
+      document.getElementById("uv").style.stroke = 'black';
+
+    }
+    function func25(){
+      document.getElementById("tv").style.fill = 'white';
+      document.getElementById("tw2").style.fill = 'white';
+
+    }
+    function func26(){
+      document.getElementById("tv").style.fill = 'rgba(0,0,0,0)';
+      document.getElementById("tw2").style.fill = 'rgba(0,0,0,0)';
+
+    }
+    function func27(){
+      document.getElementById("v").style.fill = '#1f8d8d';
+    }
+
+    function func28(){
+      document.getElementById("tw").style.fill = 'white';
+    }
+    function func29(){
+      document.getElementById("tw").style.fill = 'rgba(0,0,0,0)';
+    }
+    function func30(){
+      document.getElementById("w").style.fill = '#1f8d8d';
+    }
+
+
+
+
+     function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20000000000000);
+        }
+        setTimeout(func1,1500);
+        setTimeout(func11,2000);
+        setTimeout(func12,2500);
+        setTimeout(func13,3000);
+        setTimeout(func14,4000);
+        setTimeout(func15,5000);
+        setTimeout(func16,6000);
+        setTimeout(func17,7000);
+        setTimeout(func18,8000);
+        setTimeout(func19,9000);
+        setTimeout(func20,10000);
+        setTimeout(func21,11000);
+        setTimeout(func22,12000);
+        setTimeout(func23,13000);
+        setTimeout(func24,14000);
+        setTimeout(func25,15000);
+        setTimeout(func26,16000);
+        setTimeout(func27,17000);
+        setTimeout(func28,18000);
+        setTimeout(func29,19000);
+        setTimeout(func30,20000);
+
+
+
+        setTimeout(infinity,40500000000);
+      }
+
+
+
+    function animate() {
+
+    }
+    
+
+ function disableButton(btn1){
+        document.getElementById(btn1.id).disabled = true;
+    }
+
+
+
+  </script>
+

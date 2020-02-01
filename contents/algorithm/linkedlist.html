@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/commonhome.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/algo.css">
+
+  <title>ict</title>
+</head>
+<body>
+
+
+  <div class="heading">
+    <div class="namelogo">
+      <a href="../../index.html">
+             <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+          </a>
+          <div class="headmenu">
+            <ul>
+              <li><a href="">Learn</a></li>
+              <li><a href="">Latest</a></li>
+              <li><a href="">Technology</a></li>
+            </ul>
+          </div>
+        </div>
+        <center>
+        <div class="navigation">
+    <div class="menubar">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>  
+        <li><a href="../../Digitalization.html">Digitalization</a></li>
+        <li><a href="" id="active2" >Visualization</a>
+          <ul>
+            <li><a href="sortings.html">Sortings</a></li>
+            <li><a href="graph.html">Graph</a> 
+            </li>
+            <li><a href="other.html">Other</a></li>
+          </ul>
+        </li>
+        <li><a href="">E-Learning</a>
+          <ul>  
+            <li><a href="../../elearning.html">Live Class</a>
+            <li><a href = "../../courses.html">Courses</a></li>
+          </ul>
+        </li> 
+        <li><a href="../../aboutus.html">About Us</a>
+          
+        </li>
+      </ul>
+        
+    </div>
+    </div>
+  </center>
+  </div>
+
+
+
+
+
+<div class="webcontents">
+  
+  <div class="contents clear ">
+	<center>
+	<div class="svg">
+        <p id="name">LINKED LIST</p>
+                <button id = "btn1"  onclick = "startAnimation();disableButton(this);">Start</button><br>
+     
+    
+
+
+	
+	<svg width="1050" height = "440px" id="linked_list_svg">
+
+		<text x="210" y="40" stroke-width="0.5" fill="black"
+		 font-size="17px"> root_ptr</text>
+		<text x="298.66666666666667" y="131" id="text11"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >41</text>
+		  <text x="298.66666666666667" y="131" id="text12"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >93</text>
+
+		<text x="298.66666666666667" y="131" id="text13"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >65</text>
+
+		  <text x="298.66666666666667" y="131" id="text14"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor = "middle" stroke-width="0.8px"
+		  >44</text>
+
+		  <text x="298.66666666666667" y="131" id="text15"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >78</text>
+
+		  <text x="298.66666666666667" y="131" id="text11"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >41</text>
+		  <text x="298.66666666666667" y="131" id="text12"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >93</text>
+
+
+		  <!-- input start -->
+
+		  <text x="298.66666666666667" y="231" id="texti1"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >41</text>
+		  <text x="298.66666666666667" y="231" id="texti2"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >93</text>
+
+
+		<text x="298.66666666666667" y="231" id="texti3"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >65</text>
+
+		  <text x="298.66666666666667" y="231" id="texti4"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor = "middle" stroke-width="0.8px"
+		  >44</text>
+
+		  <text x="298.66666666666667" y="231" id="texti5"
+		 font-family="Verdana" fill="rgba(0,0,0,0)" stroke="none" font-size="20px"
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px"
+		  >78</text>
+
+
+		  <rect x="272" y="211" height="40" width="80" id="rectinput" stroke="rgba(0,0,0,0)" stroke-width="1px" fill="none"
+		></rect>
+		<line x1="336" y1="211" x2="336" y2="251" 
+		id="lineinput1" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+
+		<line x1="220" y1="65" x2="272" y2="231" 
+		id="lineinput2" 
+		stroke="rgba(0,0,0,0)" stroke-width="1"></line>
+		<line x1="352" y1="231" x2="416" y2="131" 
+		id="lineinput3" 
+		stroke="rgba(0,0,0,0)" stroke-width="1"></line>
+
+
+		  <!-- input stop -->
+
+
+		<text x="442.66666666666669" y="131" id="text21" font-family="Verdana" stroke="none" font-size="20px" 
+		dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px">
+		41</text>
+
+		<text x="442.66666666666669" y="131" id="text22" font-family="Verdana" stroke="none" font-size="20px" 
+		dy=".3em" text-anchor="middle" fill="rgba(0,0,0,0)" stroke-width="0.8px">
+		93</text>
+
+		<text x="442.66666666666669" y="131" id="text23" font-family="Verdana" stroke="none" font-size="20px" 
+		dy=".3em" text-anchor="middle" fill="rgba(0,0,0,0)" stroke-width="0.8px">
+		65</text>
+
+		<text x="442.66666666666669" y="131" id="text24" font-family="Verdana" stroke="none" font-size="20px" 
+		dy=".3em" text-anchor="middle" fill="rgba(0,0,0,0)" stroke-width="0.8px">
+		44</text>
+
+
+		<text x="586.6666666666667" y="131" id="text31" font-family="Verdana" stroke="none" font-size="20px" dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px">41</text>
+
+		<text x="586.6666666666667" y="131" id="text32" font-family="Verdana" stroke="none" font-size="20px" dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px">93</text>
+
+		<text x="586.6666666666667" y="131" id="text33" font-family="Verdana" stroke="none" font-size="20px" dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px">65</text>
+
+		<text x="730.6666666666667" y="131" id="text41"
+		 font-family="Verdana" stroke="none" font-size="20px"
+		  dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px"
+		  >41</text>
+
+		  <text x="730.6666666666667" y="131" id="text42"
+		 font-family="Verdana" stroke="none" font-size="20px"
+		  dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px"
+		  >93</text>
+
+		<text x="874.6666666666667" y="131" id="text51"
+		 font-family="Verdana" stroke="none" font-size="20px"
+		  dy=".3em" fill="rgba(0,0,0,0)" text-anchor="middle" stroke-width="0.8px"
+		  >41</text>
+
+
+
+		<!-- <text x="1018.6666666666667" y="131" id="linked_data4
+		"
+		 font-family="Verdana" stroke="none" font-size="20px
+
+		 "
+		  dy=".3em" text-anchor="middle" stroke-width="0.8px
+		  "
+		  >100</text> -->
+
+		<line x1="220" y1="65" x2="266" y2="131" 
+		id="line1" 
+		stroke="rgba(0,0,0,0)" stroke-width="1"></line>
+		
+		<line x1="336" y1="111" x2="336" y2="151" 
+		id="line2" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+		<line x1="480" y1="111" x2="480" y2="151" 
+		id="line3" stroke="rgba(0,0,0,0)" stroke-width="1px">
+			
+		</line>
+		<line x1="624" y1="111" x2="624" y2="151"
+		 id="line4" stroke="rgba(0,0,0,0)" stroke-width="1px"
+		 >
+		 	
+		 </line>
+
+		<line x1="768" y1="111" x2="768" y2="151" 
+		id="line5" stroke="rgba(0,0,0,0)" stroke-width="1px">
+			
+		</line>
+		<line x1="912" y1="111" x2="912" 
+		y2="151" id="line6" stroke="rgba(0,0,0,0)" 
+		stroke-width="1px">
+			
+		</line>
+		<line x1="1056" y1="111" x2="1056" y2="151" 
+		id="line7" stroke="rgba(0,0,0,0)" 
+		stroke-width="1px"></line>
+
+		<line x1="340" y1="119" x2="348" y2="143" 
+		id="pathend1" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+		<line x1="484" y1="119" x2="492" y2="143" 
+		id="pathend2" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+		<line x1="628" y1="119" x2="636" y2="143" 
+		id="pathend3" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+		<line x1="772" y1="119" x2="780" y2="143" 
+		id="pathend4" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+		<line x1="916" y1="119" x2="924" y2="143" 
+		id="pathend5" 
+		stroke="rgba(0,0,0,0)" stroke-width="1px"></line>
+
+
+		<polyline points="342,131,408,131,409,131" 
+		id="pline1" stroke="rgba(0,0,0,0)" 
+		stroke-width="1px" marker-end="url(#arrow_link)" 
+		fill="none"></polyline>
+		
+
+		<polyline points="486,131,552,131,553,131" 
+		id="pline2" stroke="rgba(0,0,0,0)" stroke-width="1px" marker-end="url(#arrow_link)" fill="none">
+			
+		</polyline>
+		<polyline points="630,131,696,131,697,131" id="pline3" stroke="rgba(0,0,0,0)" stroke-width="1px" marker-end="url(#arrow_link)" fill="none">
+			
+		</polyline>
+
+		<polyline points="774,131,840,131,841,131" id="pline4" stroke="rgba(0,0,0,0)" stroke-width="
+		1px" marker-end="url(#arrow_link)" fill="none">
+			
+		</polyline>
+		<path d="M268 124 L264 136 L271 131 H" id ="path0"  fill="rgba(0,0,0,0)"/>
+		<path d="M409 126 L409 136 L418 131 H" id ="path1"  fill="rgba(0,0,0,0)"/>
+		<path d="M553 126 L553 136 L562 131 H" id ="path2"  fill="rgba(0,0,0,0)" />
+		<path d="M697 126 L697 136 L706 131 H" id ="path3" fill="rgba(0,0,0,0)" />
+		<path d="M841 126 L841 136 L850 131 H" id ="path4" fill="rgba(0,0,0,0)" /><!-- 
+		<path d="M336 126 L336 136 L342 131 H" id ="pathend" fill="rgba(0,0,0,0)" /> -->
+		
+
+		<rect x="210" y="50" width="40px" height="30" fill="white" stroke-width="1px" stroke="black" id="rect1"></rect>
+
+		<rect x="272" y="111" height="40" width="80" id="rect2" stroke="rgba(0,0,0,0)" stroke-width="1px" fill="none"
+		></rect>
+
+		<rect x="416" y="111" height="40" width="80" id="rect3" stroke="rgba(0,0,0,0)" stroke-width="1px" fill="none"
+		></rect>
+
+
+		<rect x="560" y="111" height="40" width="80" id="rect4" stroke="rgba(0,0,0,0)" stroke-width="1px" fill="none"
+		></rect>
+
+		<rect x="704" y="111" height="40" width="80" id="rect5" stroke="rgba(0,0,0,0)" stroke-width="1px" fill="none"
+		></rect>
+		<rect x="848" y="111" height="40" width="80" id="rect6" stroke="rgba(0,0,0,0)" stroke-width="1px" fill="none"
+		></rect>
+		<g>
+			
+		</g>
+	</svg>
+
+
+
+</div>
+</center>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+	<script >
+		function disableButton(btn1){
+        document.getElementById(btn1.id).disabled = true;
+    }
+
+	var timerFunction = null;
+	function f1(){
+		document.getElementById("rectinput").style.stroke ="black";
+		document.getElementById("lineinput1").style.stroke ="black";
+		document.getElementById("texti1").style.fill ="black";
+	}
+
+
+	function f2(){
+		document.getElementById("rectinput").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("lineinput1").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("texti1").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("path0").style.stroke ="black";
+    	document.getElementById("path0").style.fill ="black";
+    	document.getElementById("line1").style.stroke ="black";
+
+    	document.getElementById("rect2").style.stroke ="black";
+    	document.getElementById("text11").style.fill ="black";
+    	document.getElementById("line2").style.stroke ="black";
+    	document.getElementById("pathend1").style.stroke ="black";
+
+    	document.getElementById("pathend1").style.fill ="black";
+	}
+
+	function f3() {
+
+		document.getElementById("rectinput").style.stroke ="black";
+		document.getElementById("lineinput1").style.stroke ="black";
+		document.getElementById("texti2").style.fill ="black";
+		
+
+	}
+
+	function f4() {
+
+
+		document.getElementById("rect2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("text11").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend1").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.fill ="rgba(0,0,0,0)";
+
+		document.getElementById("rect3").style.stroke ="black";
+    	document.getElementById("text21").style.fill ="black";
+    	document.getElementById("line3").style.stroke ="black";
+    	document.getElementById("pathend2").style.stroke ="black";
+    	document.getElementById("pathend2").style.fill ="black";
+    	document.getElementById("lineinput2").style.stroke ="black";
+    	document.getElementById("lineinput3").style.stroke ="black";
+
+	}
+
+
+	function f5() {
+
+		document.getElementById("rectinput").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("lineinput1").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("texti2").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput3").style.stroke ="rgba(0,0,0,0)";
+
+    	document.getElementById("rect2").style.stroke ="black";
+    	document.getElementById("line2").style.stroke ="black";
+    	document.getElementById("text12").style.fill ="black";
+    	document.getElementById("pline1").style.stroke ="black";
+    	document.getElementById("line1").style.stroke ="black";
+    	document.getElementById("path1").style.stroke ="black";
+    	document.getElementById("path1").style.fill ="black";
+    	document.getElementById("path0").style.stroke ="black";
+    	document.getElementById("path0").style.fill ="black";
+
+	}
+
+	function f6(){
+		document.getElementById("rectinput").style.stroke ="black";
+		document.getElementById("lineinput1").style.stroke ="black";
+		document.getElementById("texti3").style.fill ="black";
+	}
+
+	function f7() {
+
+
+		document.getElementById("rect2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("text12").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text21").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend2").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("pline1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.fill ="rgba(0,0,0,0)";
+
+		document.getElementById("rect3").style.stroke ="black";
+		document.getElementById("rect4").style.stroke ="black";
+    	document.getElementById("text22").style.fill ="black";
+    	document.getElementById("text31").style.fill ="black";
+    	document.getElementById("line3").style.stroke ="black";
+    	document.getElementById("line4").style.stroke ="black";
+    	document.getElementById("pline2").style.stroke ="black";
+    	document.getElementById("path2").style.stroke ="black";
+    	document.getElementById("path2").style.fill ="black";
+    	document.getElementById("pathend3").style.stroke ="black";
+    	document.getElementById("pathend3").style.fill ="black";
+    	document.getElementById("lineinput2").style.stroke ="black";
+    	document.getElementById("lineinput3").style.stroke ="black";
+
+	}
+
+	function f8() {
+
+		document.getElementById("rectinput").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("lineinput1").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("texti3").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput3").style.stroke ="rgba(0,0,0,0)";
+
+    	document.getElementById("rect2").style.stroke ="black";
+    	document.getElementById("line2").style.stroke ="black";
+    	document.getElementById("text13").style.fill ="black";
+    	document.getElementById("pline1").style.stroke ="black";
+    	document.getElementById("line1").style.stroke ="black";
+    	document.getElementById("path1").style.stroke ="black";
+    	document.getElementById("path1").style.fill ="black";
+    	document.getElementById("path0").style.stroke ="black";
+    	document.getElementById("path0").style.fill ="black";
+
+	}
+
+    function f9(){
+		document.getElementById("rectinput").style.stroke ="black";
+		document.getElementById("lineinput1").style.stroke ="black";
+		document.getElementById("texti4").style.fill ="black";
+	}
+
+	function f10() {
+
+
+		document.getElementById("rect2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("text13").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text22").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text31").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend3").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend3").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("pline1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.fill ="rgba(0,0,0,0)";
+
+		document.getElementById("rect3").style.stroke ="black";
+		document.getElementById("rect4").style.stroke ="black";
+		document.getElementById("rect5").style.stroke ="black";
+    	document.getElementById("text23").style.fill ="black";
+    	document.getElementById("text32").style.fill ="black";
+    	document.getElementById("text41").style.fill ="black";
+    	document.getElementById("line3").style.stroke ="black";
+    	document.getElementById("line4").style.stroke ="black";
+    	document.getElementById("line5").style.stroke ="black";
+    	document.getElementById("pline2").style.stroke ="black";
+    	document.getElementById("pline3").style.stroke ="black";
+    	document.getElementById("path2").style.stroke ="black";
+    	document.getElementById("path2").style.fill ="black";
+    	document.getElementById("path3").style.stroke ="black";
+    	document.getElementById("path3").style.fill ="black";
+    	document.getElementById("pathend4").style.stroke ="black";
+    	document.getElementById("pathend4").style.fill ="black";
+    	document.getElementById("lineinput2").style.stroke ="black";
+    	document.getElementById("lineinput3").style.stroke ="black";
+
+	}
+
+	function f11() {
+
+		document.getElementById("rectinput").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("lineinput1").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("texti4").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput3").style.stroke ="rgba(0,0,0,0)";
+
+    	document.getElementById("rect2").style.stroke ="black";
+    	document.getElementById("line2").style.stroke ="black";
+    	document.getElementById("text14").style.fill ="black";
+    	document.getElementById("pline1").style.stroke ="black";
+    	document.getElementById("line1").style.stroke ="black";
+    	document.getElementById("path1").style.stroke ="black";
+    	document.getElementById("path1").style.fill ="black";
+    	document.getElementById("path0").style.stroke ="black";
+    	document.getElementById("path0").style.fill ="black";
+
+	}
+
+	function f12(){
+		document.getElementById("rectinput").style.stroke ="black";
+		document.getElementById("lineinput1").style.stroke ="black";
+		document.getElementById("texti5").style.fill ="black";
+	}
+    
+	function f13() {
+
+		document.getElementById("rect2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("text14").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text23").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text32").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text41").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend4").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend4").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("line1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("pline1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.fill ="rgba(0,0,0,0)";
+
+		document.getElementById("rect3").style.stroke ="black";
+		document.getElementById("rect4").style.stroke ="black";
+		document.getElementById("rect5").style.stroke ="black";
+    	document.getElementById("rect6").style.stroke ="black";
+    	document.getElementById("text24").style.fill ="black";
+    	document.getElementById("text33").style.fill ="black";
+    	document.getElementById("text42").style.fill ="black";
+    	document.getElementById("text51").style.fill ="black";
+    	document.getElementById("line3").style.stroke ="black";
+    	document.getElementById("line4").style.stroke ="black";
+    	document.getElementById("line5").style.stroke ="black";
+        document.getElementById("line6").style.stroke ="black";
+    	document.getElementById("pline2").style.stroke ="black";
+    	document.getElementById("pline3").style.stroke ="black";
+    	document.getElementById("pline4").style.stroke ="black";
+    	document.getElementById("path2").style.stroke ="black";
+    	document.getElementById("path2").style.fill ="black";
+    	document.getElementById("path3").style.stroke ="black";
+    	document.getElementById("path3").style.fill ="black";
+    	document.getElementById("path4").style.stroke ="black";
+    	document.getElementById("path4").style.fill ="black";
+    	document.getElementById("pathend5").style.stroke ="black";
+    	document.getElementById("pathend5").style.fill ="black";
+    	document.getElementById("lineinput2").style.stroke ="black";
+    	document.getElementById("lineinput3").style.stroke ="black";
+
+	}
+
+	function f14() {
+
+		document.getElementById("rectinput").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("lineinput1").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("texti5").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput3").style.stroke ="rgba(0,0,0,0)";
+
+    	document.getElementById("rect2").style.stroke ="black";
+    	document.getElementById("line2").style.stroke ="black";
+    	document.getElementById("text15").style.fill ="black";
+    	document.getElementById("pline1").style.stroke ="black";
+    	document.getElementById("line1").style.stroke ="black";
+    	document.getElementById("path1").style.stroke ="black";
+    	document.getElementById("path1").style.fill ="black";
+    	document.getElementById("path0").style.stroke ="black";
+    	document.getElementById("path0").style.fill ="black";
+
+	}
+
+	function f15() {
+
+		document.getElementById("rect2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("line2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("line1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path0").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("pline1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("path1").style.fill ="rgba(0,0,0,0)";
+    	document.getElementById("text15").style.fill ="rgba(0,0,0,0)";
+
+		document.getElementById("rectinput").style.stroke ="black";
+		document.getElementById("texti5").style.fill ="black";
+		document.getElementById("lineinput1").style.stroke ="black";
+    	document.getElementById("lineinput2").style.stroke ="black";
+    	document.getElementById("lineinput3").style.stroke ="black";
+
+	}
+
+
+	function f16() {
+
+		document.getElementById("rectinput").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("lineinput1").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("texti5").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("text51").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("text42").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("text33").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("text24").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("text14").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("rect6").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("pline4").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("line6").style.stroke ="rgba(0,0,0,0)";
+		document.getElementById("path4").style.fill ="rgba(0,0,0,0)";
+		document.getElementById("path4").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput2").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("lineinput3").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend5").style.stroke ="rgba(0,0,0,0)";
+    	document.getElementById("pathend5").style.fill ="rgba(0,0,0,0)";
+
+    	document.getElementById("rect2").style.stroke ="black";
+    	document.getElementById("line2").style.stroke ="black";
+    	document.getElementById("text14").style.fill ="black";
+    	document.getElementById("pline1").style.stroke ="black";
+    	document.getElementById("line1").style.stroke ="black";
+    	document.getElementById("path1").style.stroke ="black";
+    	document.getElementById("path1").style.fill ="black";
+    	document.getElementById("path0").style.stroke ="black";
+    	document.getElementById("path0").style.fill ="black";
+    	document.getElementById("pathend4").style.stroke ="black";
+    	document.getElementById("text23").style.fill ="black";
+    	document.getElementById("text32").style.fill ="black";
+    	document.getElementById("text41").style.fill ="black";
+    	document.getElementById("pathend4").style.fill ="black";
+    	//document.getElementById("pathend4").style.fill ="black";
+
+
+	}
+
+		function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20);
+        }
+        setTimeout(f1,600);
+        setTimeout(f2,1500);
+        setTimeout(f3,2300);
+        setTimeout(f4,3300);
+        setTimeout(f5,4200);
+        setTimeout(f6,5100);
+        setTimeout(f7,6000);
+        setTimeout(f8,7000);
+        setTimeout(f9,8000);
+        setTimeout(f10,9000);
+        setTimeout(f11,10000);
+        setTimeout(f12,11000);
+        setTimeout(f13,12000);
+        setTimeout(f14,13000);
+        setTimeout(f15,14000);
+        setTimeout(f16,15000);
+    }
+
+    function stopAnimation() {
+        if(timerFunction != null){
+            clearInterval(timerFunction);
+            timerFunction = null;
+        }
+    }
+
+    function animate() {
+    }
+		
+	</script>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/commonhome.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/algo.css">
+
+  <title>ict</title>
+</head>
+<body>
+
+
+<div class="heading">
+		<div class="namelogo">
+			<a href="../../index.html">
+        	   <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+        	</a>
+        	<div class="headmenu">
+        		<ul>
+        			<li><a href="">Learn</a></li>
+        			<li><a href="">Latest</a></li>
+        			<li><a href="">Technology</a></li>
+        		</ul>
+        	</div>
+        </div>
+        <center>
+        <div class="navigation">
+		<div class="menubar">
+			<ul>
+				<li><a href="../../index.html">Home</a></li>	
+				<li><a href="../../Digitalization.html">Digitalization</a></li>
+				<li><a href="" id="active2" >Visualization</a>
+					<ul>
+						<li><a href="sortings.html">Sortings</a></li>
+						<li><a href="graph.html">Graph</a> 
+						</li>
+						<li><a href="other.html">Other</a></li>
+					</ul>
+				</li>
+				<li><a href="">E-Learning</a>
+					<ul>	
+						<li><a href="../../elearning.html">Live Class</a>
+						<li><a href = "../../courses.html">Courses</a></li>
+					</ul>
+				</li>	
+				<li><a href="../../aboutus.html">About Us</a>
+					
+				</li>
+			</ul>
+				
+		</div>
+		</div>
+	</center>
+	</div>
+
+
+
+
+
+<div class="webcontents">
+	
+	<div class="contents">
+		<center>
+		<h1>Flowchart</h1>
+		<button id = "btn1"  onclick = "disableButton(this);startAnimation();">Start</button><br>
+		<div>
+		<svg width='700px' height='650px'>
+			<g style="font-size: 20px;">
+				
+				<text id="tm1" x="-347" y="20" style="text-anchor: middle;">Finding maximum number of given 3 number</text>
+
+				<rect  id="p1" x="-295" y="45" rx="60" ry="50" fill='#0000001f' width='95px' height='50' stroke="grey" stroke-width="1"></rect>
+				<text id="t1" x="-347" y="75" style="text-anchor: middle;">Start</text>
+
+				<polygon id="p2" points="120,125 580, 125  545, 170  85, 170"
+    				 fill='white'/>
+    			<text id="t2" x="-347" y="150" style="text-anchor: middle;">Input a,b,c</text>
+
+    			<polygon id="p3" points="340,195 400, 237  340, 280  280, 237"
+    				 fill='white'/>
+    			<text id="t3" x="-342" y="240" style="text-anchor: middle;">is a > b ?</text>
+
+    			<polygon id="p4" points="190,237 250, 279  190, 322  130, 279"
+    				 fill='white'/>
+    			<text id="t4" x="-192" y="287" style="text-anchor: middle;">is a > c ?</text>
+
+    			<polygon id="p5" points="490,237 550, 279  490, 322  430, 279"
+    				 fill='white'/>
+    			<text id="t5" x="-492" y="282" style="text-anchor: middle;">is b > c ?</text>
+    			<polygon id="p6" points="40,365 200, 365  165, 410  5, 410"
+    				 fill='white'/>
+    			<text id="t6" x="-102" y="390" style="text-anchor: middle;">Print a</text>
+    			<polygon id="p7" points="270,365 430, 365  395, 410  235, 410"
+    				 fill='white'/>
+    			<text id="t7" x="-332" y="390" style="text-anchor: middle;">Print c</text>
+    			<polygon id="p8" points="500,365 660, 365  625, 410  465, 410"
+    				 fill='white'/>
+    			<text id="t8" x="-562" y="390" style="text-anchor: middle;">Print b</text>
+
+
+    			<rect  id="p9" x="-320" y="460" rx="100" ry="100" fill='#0000001f' width='40px' height='40' stroke="grey" stroke-width="1"></rect>
+    			<rect  id="p10" x="-295" y="555" rx="60" ry="50" fill='#0000001f' width='95px' height='50' stroke="grey" stroke-width="1"></rect>
+				<text id="t10" x="-347" y="585" style="text-anchor: middle;">End</text>
+
+				<line id="l1" x1="340" y1="95" x2="340" y2="125"
+                  stroke-width="2" stroke= "white"/>
+                <line id="l11" x1="330" y1="115" x2="340" y2="125"
+                  stroke-width="2" stroke= "white"/>
+                 <line id="l12" x1="350" y1="115" x2="340" y2="125"
+                  stroke-width="2" stroke= "white"/>
+
+				<line id="l2" x1="340" y1="170" x2="340" y2="195"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l21" x1="330" y1="185" x2="340" y2="195"
+                  stroke-width="2" stroke= "white"/>
+                 <line id="l22" x1="350" y1="185" x2="340" y2="195"
+                  stroke-width="2" stroke= "white"/>
+
+				<line id="l3" x1="190" y1="237" x2="280" y2="237"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l31" x1="190" y1="237" x2="200" y2="227"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l32" x1="190" y1="237" x2="200" y2="247"
+                  stroke-width="2" stroke= "white"/>
+
+                 <line id="l4" x1="400" y1="237" x2="490" y2="237"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l41" x1="480" y1="227" x2="490" y2="237"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l42" x1="480" y1="247" x2="490" y2="237"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l5" x1="130" y1="280" x2="130" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l51" x1="120" y1="355" x2="130" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l52" x1="140" y1="355" x2="130" y2="365"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l6" x1="300" y1="280" x2="300" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l61" x1="310" y1="355" x2="300" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l62" x1="290" y1="355" x2="300" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l63" x1="250" y1="280" x2="300" y2="280"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l7" x1="380" y1="280" x2="380" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l71" x1="370" y1="355" x2="380" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l72" x1="390" y1="355" x2="380" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l73" x1="380" y1="280" x2="430" y2="280"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l8" x1="550" y1="280" x2="550" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l81" x1="540" y1="355" x2="550" y2="365"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l82" x1="560" y1="355" x2="550" y2="365"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l16" x1="100" y1="410" x2="100" y2="485"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l161" x1="100" y1="485" x2="320" y2="485"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l162" x1="310" y1="475" x2="320" y2="485"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l163" x1="310" y1="495" x2="320" y2="485"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l9" x1="340" y1="410" x2="340" y2="460"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l91" x1="330" y1="450" x2="340" y2="460"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l92" x1="350" y1="450" x2="340" y2="460"
+                  stroke-width="2" stroke= "white"/>
+
+                  <line id="l10" x1="550" y1="410" x2="550" y2="485"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l101" x1="360" y1="485" x2="550" y2="485"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l102" x1="360" y1="485" x2="370" y2="475"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l103" x1="360" y1="485" x2="370" y2="495"
+                  stroke-width="2" stroke= "white"/>
+
+
+                  <line id="l111" x1="340" y1="500" x2="340" y2="555"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l112" x1="330" y1="545" x2="340" y2="555"
+                  stroke-width="2" stroke= "white"/>
+                  <line id="l113" x1="350" y1="545" x2="340" y2="555"
+                  stroke-width="2" stroke= "white"/>
+
+                  <text id="t11" x="-247" y="225" style="text-anchor: middle;">Yes</text>
+                  <text id="t12" x="-447" y="225" style="text-anchor: middle;">No</text>
+                  <text id="t13" x="-100" y="325" style="text-anchor: middle;">Yes</text>
+                  <text id="t14" x="-270" y="325" style="text-anchor: middle;">No</text>
+                  <text id="t15" x="-400" y="325" style="text-anchor: middle;">No</text>
+                  <text id="t16" x="-570" y="325" style="text-anchor: middle;">Yes</text>
+
+			</g>
+		</svg>
+	</div>
+
+
+</center>
+	</div>
+	
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+		<script>
+			 var timerFunction = null;
+				function func1(){
+					tm1.setAttribute("x", 347);
+				}
+				function func2(){
+					t1.setAttribute("x", 347);
+					p1.setAttribute("x", 295);
+				}
+				function func3(){
+					document.getElementById("l1").style.stroke='black';
+					document.getElementById("l11").style.stroke='black';
+					document.getElementById("l12").style.stroke='black';
+				}
+				function func4(){
+					t2.setAttribute("x", 347);
+					document.getElementById("p2").style.fill='#0000001f';
+				}
+				
+				
+				function func5(){
+					document.getElementById("l2").style.stroke='black';
+					document.getElementById("l21").style.stroke='black';
+					document.getElementById("l22").style.stroke='black';
+				}
+				function func6(){
+					document.getElementById("p3").style.fill='#0000001f';
+					t3.setAttribute("x", 342);
+				}
+
+				function func8(){
+					document.getElementById("l3").style.stroke='black';
+					document.getElementById("l31").style.stroke='black';
+					document.getElementById("l32").style.stroke='black';
+				}
+				function func7(){
+					t11.setAttribute("x", 247);
+					
+				}
+				function func9(){
+					t4.setAttribute("x", 192);
+					document.getElementById("p4").style.fill='#0000001f';
+				}
+				function func10(){
+					t12.setAttribute("x", 447);
+				}
+				function func11(){
+					document.getElementById("l4").style.stroke='black';
+					document.getElementById("l41").style.stroke='black';
+					document.getElementById("l42").style.stroke='black';
+				}
+				function func12(){
+					t5.setAttribute("x", 492);
+					document.getElementById("p5").style.fill='#0000001f';
+				}
+				function func13(){
+					t13.setAttribute("x", 100);
+				}
+				function func14(){
+					document.getElementById("l5").style.stroke='black';
+					document.getElementById("l51").style.stroke='black';
+					document.getElementById("l52").style.stroke='black';
+				}
+				function func15(){
+					t6.setAttribute("x", 102);
+					document.getElementById("p6").style.fill='#0000001f';
+				}
+				function func16(){
+					t14.setAttribute("x", 270);
+				}
+				function func17(){
+					document.getElementById("l6").style.stroke='black';
+					document.getElementById("l61").style.stroke='black';
+					document.getElementById("l62").style.stroke='black';
+					document.getElementById("l63").style.stroke='black';
+				}
+				function func18(){
+					t7.setAttribute("x", 332);
+					document.getElementById("p7").style.fill='#0000001f';
+				}
+				function func19(){
+					t16.setAttribute("x", 570);
+				}
+				function func20(){
+					document.getElementById("l8").style.stroke='black';
+					document.getElementById("l81").style.stroke='black';
+					document.getElementById("l82").style.stroke='black';
+					
+				}
+				function func21(){
+					t8.setAttribute("x", 562);
+					document.getElementById("p8").style.fill='#0000001f';
+				}
+				function func22(){
+					t15.setAttribute("x", 400);
+				}
+				function func23(){
+					document.getElementById("l7").style.stroke='black';
+					document.getElementById("l71").style.stroke='black';
+					document.getElementById("l72").style.stroke='black';
+					document.getElementById("l73").style.stroke='black';
+					
+				}
+				function func24(){
+					t7.setAttribute("x", 332);
+					document.getElementById("p7").style.fill='#0000001f';
+				}
+				function func25(){
+					document.getElementById("l16").style.stroke='black';
+					document.getElementById("l161").style.stroke='black';
+					document.getElementById("l162").style.stroke='black';
+					document.getElementById("l163").style.stroke='black';
+					
+				}
+				function func26(){
+					p9.setAttribute("x", 320);
+					
+				}
+				function func27(){
+					document.getElementById("l9").style.stroke='black';
+					document.getElementById("l91").style.stroke='black';
+					document.getElementById("l92").style.stroke='black';
+					document.getElementById("l93").style.stroke='black';
+				}
+				function func28(){
+					document.getElementById("l10").style.stroke='black';
+					document.getElementById("l101").style.stroke='black';
+					document.getElementById("l102").style.stroke='black';
+					document.getElementById("l103").style.stroke='black';
+				}
+				function func29(){
+					document.getElementById("l11").style.stroke='black';
+					document.getElementById("l111").style.stroke='black';
+					document.getElementById("l112").style.stroke='black';
+					document.getElementById("l113").style.stroke='black';
+				}
+				function func30(){
+					p10.setAttribute("x", 295);
+					t10.setAttribute("x", 347);
+					
+				}
+
+
+				
+
+				
+				
+				
+
+
+
+			 function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20000000000000);
+        }
+        setTimeout(func1,1000);
+				setTimeout(func2,3000);
+				setTimeout(func3,5000);
+				setTimeout(func4,7000);
+				setTimeout(func5,9000);
+				setTimeout(func6,11000);
+				setTimeout(func7,13000);
+				setTimeout(func8,15000);
+				setTimeout(func9,17000);
+				setTimeout(func10,19000);
+				setTimeout(func11,21000);
+				setTimeout(func12,23000);
+				setTimeout(func13,25000);
+				setTimeout(func14,27000);
+				setTimeout(func15,29000);
+				setTimeout(func16,31000);
+				setTimeout(func17,33000);
+				setTimeout(func18,35000);
+				setTimeout(func19,37000);
+				setTimeout(func20,39000);
+				setTimeout(func21,41000);
+				setTimeout(func22,43000);
+				setTimeout(func23,45000);
+				setTimeout(func24,47000);
+				setTimeout(func25,49000);
+				setTimeout(func26,51000);
+				setTimeout(func27,53000);
+				setTimeout(func28,55000);
+				setTimeout(func29,57000);
+				setTimeout(func30,59000);
+      }
+
+
+      function stopAnimation() {
+        if(timerFunction != null){
+            clearInterval(timerFunction);
+            timerFunction = null;
+        }
+    }
+
+    function animate() {
+        var rect = document.getElementById("rect");
+
+        var x = rect.getAttribute("x");
+
+        var newX = 2 + parseInt(x);
+        if(newX > 500) {
+            newX = 20;
+        }
+        rect.setAttribute("x", newX);
+    }
+    
+
+ function disableButton(btn1){
+        document.getElementById(btn1.id).disabled = true;
+    }
+
+		</script>

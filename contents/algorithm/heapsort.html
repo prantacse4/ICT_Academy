@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/commonhome.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/algo.css">
+
+  <title>ict</title>
+</head>
+<body>
+
+<div class="heading">
+        <div class="namelogo">
+            <a href="../../index.html">
+               <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+            </a>
+            <div class="headmenu">
+                <ul>
+                    <li><a href="">Learn</a></li>
+                    <li><a href="">Latest</a></li>
+                    <li><a href="">Technology</a></li>
+                </ul>
+            </div>
+        </div>
+        <center>
+        <div class="navigation">
+        <div class="menubar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>    
+                <li><a href="../../Digitalization.html">Digitalization</a></li>
+                <li><a href="" id="active2" >Visualization</a>
+                    <ul>
+                        <li><a href="sortings.html">Sortings</a></li>
+                        <li><a href="graph.html">Graph</a> 
+                        </li>
+                        <li><a href="other.html">Other</a></li>
+                    </ul>
+                </li>
+                <li><a href="">E-Learning</a>
+                    <ul>    
+                        <li><a href="../../elearning.html">Live Class</a>
+                        <li><a href = "../../courses.html">Courses</a></li>
+                    </ul>
+                </li>   
+                <li><a href="../../aboutus.html">About Us</a>
+                    
+                </li>
+            </ul>
+                
+        </div>
+        </div>
+    </center>
+    </div>
+
+
+
+
+<div class="webcontents">
+  
+  <div class="contents clear ">
+	
+	<center>
+	<div class="svg">
+        <p id="name">Heap Sort</p>
+		<button id = "btn1"  onclick = "startAnimation();disableButton(this);">Start</button><br>
+    
+    <br>
+		<svg  width='800px' height='700px'>
+            <text id = "ct" x="150" y="500">Sorted (Extracted Max Heap):</text>
+  		<g class='bars' >
+             <circle id="c1" cx="30" cy="370" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" />	
+              <text id = "ct1" x="30" y="420">8</text> 
+   		 <text id = "t1" x="32" y="375">25</text>
+
+         <line id="l1" x1="39" y1="347" x2="88" y2="298" style="stroke:#204419;stroke-width:2" />
+
+            <circle id="c2" cx="90" cy="290" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" /> 
+            <text id = "ct2" x="90" y="340">4</text>      
+   		 <text id="t2" x="92" y="292">42</text>
+
+         <line id="l2"  x1="108" y1="274" x2="185" y2="230" style="stroke:#204419; stroke-width:2" />
+
+            <circle id="c3" cx="190" cy="220" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" />
+            <text id = "ct3" x="192" y="273">2</text> 
+   		 <text id = "t3" x="192" y="225">62</text>
+
+         <line  id="l3"  x1="205" y1="240" x2="288" y2="280" style="stroke:#204419; stroke-width:2" />
+
+            <circle id="c4" cx="290" cy="290" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" />
+            <text id = "ct4" x="290" y="340">5</text> 
+   		 <text id ="t4" x="292" y="292">46</text>
+
+          <line id="l4"  x1="210" y1="208" x2="390" y2="120" style="stroke:#204419; stroke-width:2" />
+
+            <circle id="c5" cx="390" cy="120" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" />
+            <text id = "ct5" x="390" y="173">1</text>
+   		 <text id = "t5" x="392" y="125">99</text>
+
+            <line  id="l5" x1="415" y1="130" x2="585" y2="220" style="stroke:#204419; stroke-width:2" />
+
+            <circle id="c6" cx="585" cy="220" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" />
+            <text id = "ct6" x="585" y="273">3</text> 
+   		 <text id = "t6" x="588" y="222">64</text>
+
+            <line  id="l6"  x1="565" y1="238" x2="470" y2="290" style="stroke:#204419; stroke-width:2" />
+
+            <circle id="c7" cx="470" cy="290" r="25" stroke="green" stroke-width="4" fill="#CCCCCC"/> 
+            <text id = "ct7" x="470" y="340">6</text> 
+   		 <text id = "t7" x="473" y="292">47</text>
+
+         <line  id="l7"  x1="602" y1="238" x2="700" y2="290" style="stroke:#204419; stroke-width:2" />
+
+            <circle id="c8" cx="700" cy="290" r="25" stroke="green" stroke-width="4" fill="#CCCCCC" />  
+            <text id = "ct8" x="700" y="340">7</text>        
+         <text id = "t8" x="703" y="292">40</text>
+ 		 
+  		</g>
+</svg>
+
+</div>
+
+</center>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+
+	<script>
+
+        function disableButton(btn1){
+        document.getElementById(btn1.id).disabled = true;
+    }
+
+    var timerFunction = null;
+    function func1(){
+    	document.getElementById("c5").style.fill = '#B57005';
+    }
+    function func2(){
+    	
+    	var newY = 496;
+    	var newty = 500;
+        var newX = 750;
+        var newtX = 752;
+        var newlx=390;
+        var newly=120;
+        var newctX=0;
+        var newctY=0;
+        c5.setAttribute("cx", newX);
+        t5.setAttribute("x", newtX);
+        c5.setAttribute("cy", newY);
+        t5.setAttribute("y", newty);
+        l5.setAttribute("x1",newlx);
+        l5.setAttribute("y1",newly);
+
+        ct5.setAttribute("x",newctX);
+        ct5.setAttribute("y",newctY);
+    }
+    function func11(){
+    	document.getElementById("c1").style.fill = '#B57005';
+
+    }
+
+    function func111(){
+       
+        var newY = 120;
+       
+        var newX = 390;
+        
+        c1.setAttribute("cx",newX);
+        c1.setAttribute("cy",newY);
+        var newtX = 392;
+         var newtY = 125;
+        t1.setAttribute("x",newtX);
+        t1.setAttribute("y",newtY);
+        var lx1=415;
+        var ly1=130;
+         l5.setAttribute("x1",lx1);
+        l5.setAttribute("y1",ly1);
+        var lx2=368;
+        var ly2=132;
+         l4.setAttribute("x2",lx2);
+        l4.setAttribute("y2",ly2);
+        var newctX=0;
+        var newctY=0;
+        ct1.setAttribute("x",newctX);
+        ct1.setAttribute("y",newctY);
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l1.setAttribute("x1",newlx1);
+        l1.setAttribute("y1",newly1);
+        l1.setAttribute("x2",newlx2);
+        l1.setAttribute("y2",newly2); 
+        var newctX=390;
+        var newctY=173;
+
+         ct5.setAttribute("x",newctX);
+        ct5.setAttribute("y",newctY);
+        document.getElementById("c1").style.fill = '#CCCCCC';
+    }
+
+    function func1111(){
+    	document.getElementById("c1").style.fill='#FB2604';
+        document.getElementById("c6").style.fill='#0804FB';
+    }
+    
+    function func11111(){
+    	var newY = 220;
+        var newX = 585;      
+        c1.setAttribute("cx",newX);
+        c1.setAttribute("cy",newY);
+        var newtX1 = 588;
+         var newtY1 = 225;
+        t1.setAttribute("x",newtX1);
+        t1.setAttribute("y",newtY1);
+
+        var newY2 = 120;
+        var newX2 = 390;
+        c6.setAttribute("cx",newX2);
+        c6.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t6.setAttribute("x",newtX);
+        t6.setAttribute("y",newtY);
+
+        var lix2=560;
+        var liy2=213;
+        l5.setAttribute("x2",lix2);
+        l5.setAttribute("y2",liy2);
+
+    }
+
+
+
+
+    function func3(){
+        document.getElementById("c6").style.fill='#CCCCCC';
+        document.getElementById("c7").style.fill='#0804FB'; 	
+    }
+    
+    function func33(){
+    	var newY2 = 220;
+        var newX2 = 585; 
+        c7.setAttribute("cx",newX2);
+        c7.setAttribute("cy",newY2);
+        var newtX = 588;
+         var newtY = 225;
+        t7.setAttribute("x",newtX);
+        t7.setAttribute("y",newtY);
+
+        var newY =300;
+        var newX =445;
+        c1.setAttribute("cx",newX);
+        c1.setAttribute("cy",newY);
+        var newtX1 = 447;
+         var newtY1 = 305;
+        t1.setAttribute("x",newtX1);
+        t1.setAttribute("y",newtY1);
+
+        var newtx=445;
+        var newty=350;
+        ct7.setAttribute("x", newtx);
+        ct7.setAttribute("y", newty);
+    }
+    
+    function func333(){
+    	document.getElementById("c1").style.fill='#CCCCCC';
+        document.getElementById("c7").style.fill='#CCCCCC';
+        
+    }
+    function func3333(){
+    	document.getElementById("c6").style.fill = '#B57005';
+    	
+    }
+
+    //extract
+
+ function func33333(){
+        var newY = 496;
+        var newty = 500;
+    	var newX = 700;
+        var newtX = 702;
+       
+        
+        c6.setAttribute("cx", newX);
+        t6.setAttribute("x", newtX);
+        c6.setAttribute("cy", newY);
+        t6.setAttribute("y", newty);
+    
+    }
+    
+//line off
+    function func333333(){
+    	document.getElementById("c8").style.fill = '#B57005';
+        var newY2 = 120;
+        var newX2 = 390;
+        c8.setAttribute("cx",newX2);
+        c8.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t8.setAttribute("x",newtX);
+        t8.setAttribute("y",newtY);
+
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l7.setAttribute("x1",newlx1);
+        l7.setAttribute("y1",newly1);
+        l7.setAttribute("x2",newlx2);
+        l7.setAttribute("y2",newly2); 
+
+        var newctX=0;
+        var newctY=0;
+        ct8.setAttribute("x",newctX);
+        ct8.setAttribute("y",newctY);
+
+
+    }
+
+    function func73(){
+    	document.getElementById("c8").style.fill='#CCCCCC';
+    	
+    }
+    //compare
+    function func83(){
+    	document.getElementById("c8").style.fill='#FB2604';
+        document.getElementById("c3").style.fill='#0804FB';
+  
+    }
+
+//transfer
+    function func4(){
+    	var newY2 = 120;
+        var newX2 = 390;
+        c3.setAttribute("cx",newX2);
+        c3.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t3.setAttribute("x",newtX);
+        t3.setAttribute("y",newtY);
+
+        var newY = 220;
+        var newX = 190;
+        c8.setAttribute("cx",newX);
+        c8.setAttribute("cy",newY);
+        var newtX1 = 192;
+         var newtY1 = 225;
+        t8.setAttribute("x",newtX1);
+        t8.setAttribute("y",newtY1);
+    }
+
+    
+    function func44(){
+    	document.getElementById("c3").style.fill = '#CCCCCC';
+    }
+    function func444(){
+    	document.getElementById("c4").style.fill='#0804FB';
+  
+    }
+
+    function func4444(){
+        var newY = 220;
+        var newX = 190;
+        c4.setAttribute("cx",newX);
+        c4.setAttribute("cy",newY);
+        var newtX1 = 192;
+         var newtY1 = 225;
+        t4.setAttribute("x",newtX1);
+        t4.setAttribute("y",newtY1);
+
+        var newX1 = 290;
+        var newY1 = 290;   
+        c8.setAttribute("cx",newX1);
+        c8.setAttribute("cy",newY1);
+        var newtX12 = 292;
+         var newtY12 = 295;
+        t8.setAttribute("x",newtX12);
+        t8.setAttribute("y",newtY12);
+
+           }
+
+  
+  //normalize color
+    function func44444(){
+        document.getElementById("c8").style.fill='#CCCCCC';
+        document.getElementById("c4").style.fill='#CCCCCC';
+    }
+
+//select to extract
+      
+    function func444440(){
+
+        document.getElementById("c3").style.fill = '#B57005';
+        
+    }
+  //extract  
+    function func444444(){
+    	var newY = 496;
+        var newty = 500;
+        var newX = 650;
+        var newtX = 652;
+       
+        
+        c3.setAttribute("cx", newX);
+        t3.setAttribute("x", newtX);
+        c3.setAttribute("cy", newY);
+        t3.setAttribute("y", newty);
+
+        
+    }
+    //select last element
+    function func074(){
+    	document.getElementById("c1").style.fill = '#B57005';
+    }
+//move to First
+    function func74(){
+    	var newY2 = 120;
+        var newX2 = 390;
+        c1.setAttribute("cx",newX2);
+        c1.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t1.setAttribute("x",newtX);
+        t1.setAttribute("y",newtY);
+
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l6.setAttribute("x1",newlx1);
+        l6.setAttribute("y1",newly1);
+        l6.setAttribute("x2",newlx2);
+        l6.setAttribute("y2",newly2); 
+
+        var newctX=0;
+        var newctY=0;
+        ct7.setAttribute("x",newctX);
+        ct7.setAttribute("y",newctY);
+    }
+    
+    function func84(){
+    	document.getElementById("c1").style.fill='#CCCCCC';
+    }
+
+
+//compare selection
+    function func5(){
+    	document.getElementById("c1").style.fill='#FB2604';
+        document.getElementById("c7").style.fill='#0804FB';
+    }
+    
+//exchange
+    function func55(){
+        var newX2 = 390;
+    	var newY2 = 120;
+        
+        c7.setAttribute("cx",newX2);
+        c7.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t7.setAttribute("x",newtX);
+        t7.setAttribute("y",newtY);
+
+
+        var newY = 220;
+        var newX = 585; 
+        c1.setAttribute("cx",newX);
+        c1.setAttribute("cy",newY);
+        var newtX1 = 588;
+         var newtY1 = 225;
+        t1.setAttribute("x",newtX1);
+        t1.setAttribute("y",newtY1);
+
+    }
+
+    //deselect
+    function func555(){
+    	document.getElementById("c1").style.fill='#CCCCCC';
+        document.getElementById("c7").style.fill='#CCCCCC';
+    }
+    //select to extract
+    function func5555(){
+    	
+    document.getElementById("c7").style.fill = '#B57005';
+    }
+
+//Extract 47
+    function func6(){
+    	var newY = 496;
+        var newty = 500;
+        var newX = 600;
+        var newtX = 602;
+       
+        
+        c7.setAttribute("cx", newX);
+        t7.setAttribute("x", newtX);
+        c7.setAttribute("cy", newY);
+        t7.setAttribute("y", newty);
+    }
+//move 40 to first l3&ct4 removed
+    function func66(){
+    	var newY2 = 120;
+        var newX2 = 390;
+        c8.setAttribute("cx",newX2);
+        c8.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t8.setAttribute("x",newtX);
+        t8.setAttribute("y",newtY);
+
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l3.setAttribute("x1",newlx1);
+        l3.setAttribute("y1",newly1);
+        l3.setAttribute("x2",newlx2);
+        l3.setAttribute("y2",newly2); 
+
+        var newctX=0;
+        var newctY=0;
+        ct4.setAttribute("x",newctX);
+        ct4.setAttribute("y",newctY);
+    }
+//select c4 & c8
+    function func666(){
+    	 document.getElementById("c8").style.fill='#FB2604';
+        document.getElementById("c4").style.fill='#0804FB';
+    }
+    //exchange 40 and  46;
+    function func6660(){
+    	var newX2 = 390;
+        var newY2 = 120;
+        
+        c4.setAttribute("cx",newX2);
+        c4.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t4.setAttribute("x",newtX);
+        t4.setAttribute("y",newtY);
+
+
+        var newY = 220;
+        var newX = 190; 
+        c8.setAttribute("cx",newX);
+        c8.setAttribute("cy",newY);
+        var newtX1 = 192;
+         var newtY1 = 225;
+        t8.setAttribute("x",newtX1);
+        t8.setAttribute("y",newtY1);
+    }
+
+ //   deselect
+    function func6666(){
+    	document.getElementById("c4").style.fill='#CCCCCC';
+        document.getElementById("c8").style.fill='#CCCCCC';
+    }
+//select 40 & 42
+    function func66666(){
+    	document.getElementById("c8").style.fill='#FB2604';
+        document.getElementById("c2").style.fill='#0804FB';
+    }
+//exchange c8(40) & c2(42)
+    function func7(){
+        var newX2 = 90;
+        var newY2 = 290;
+        c8.setAttribute("cx",newX2);
+        c8.setAttribute("cy",newY2);
+        var newtX = 92;
+         var newtY = 295;
+        t8.setAttribute("x",newtX);
+        t8.setAttribute("y",newtY);
+
+        var newY = 220;
+        var newX = 190; 
+        c2.setAttribute("cx",newX);
+        c2.setAttribute("cy",newY);
+        var newtX1 = 192;
+        var newtY1 = 225;
+        t2.setAttribute("x",newtX1);
+        t2.setAttribute("y",newtY1);
+//line 2 fixing
+        var newlx=173;
+        var newly=240;
+        l2.setAttribute("x2",newlx);
+        l2.setAttribute("y2",newly);
+    }
+    //deselect
+    function funt7(){
+    	document.getElementById("c2").style.fill='#CCCCCC';
+        document.getElementById("c8").style.fill='#CCCCCC';
+
+    }
+    //select 46
+    
+    function funt77(){
+    	 document.getElementById("c4").style.fill = '#B57005';
+
+    }
+
+//extract c4 (46)
+     function funt777(){
+    	var newY = 496;
+        var newty = 500;
+        var newX = 550;
+        var newtX = 552;
+              
+        c4.setAttribute("cx", newX);
+        t4.setAttribute("x", newtX);
+        c4.setAttribute("cy", newY);
+        t4.setAttribute("y", newty);
+
+         }
+//select last index c8(40)
+    function funt770(){
+       document.getElementById("c8").style.fill = '#B57005';  
+    	}
+//move c8(40) to index1
+    function funt7777(){
+    	
+        var newY2 = 120;
+        var newX2 = 390;
+        c8.setAttribute("cx",newX2);
+        c8.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t8.setAttribute("x",newtX);
+        t8.setAttribute("y",newtY);
+
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l2.setAttribute("x1",newlx1);
+        l2.setAttribute("y1",newly1);
+        l2.setAttribute("x2",newlx2);
+        l2.setAttribute("y2",newly2); 
+
+        var newctX=0;
+        var newctY=0;
+        ct2.setAttribute("x",newctX);
+        ct2.setAttribute("y",newctY);
+    }
+//deselect 1st index c8(40)
+    
+    function funt77770(){
+    	
+       document.getElementById("c8").style.fill = '#CCCCCC';  
+    }
+//select c8(40) & c2(42)
+     function funt77777(){
+    	document.getElementById("c8").style.fill='#FB2604';
+        document.getElementById("c2").style.fill='#0804FB';
+    }
+//exchange  c8(40) & c2(42)
+    function funt777770(){
+        var newX2 = 390;
+        var newY2 = 120;
+        
+        c2.setAttribute("cx",newX2);
+        c2.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t2.setAttribute("x",newtX);
+        t2.setAttribute("y",newtY);
+
+
+       var newY = 220;
+        var newX = 190; 
+        c8.setAttribute("cx",newX);
+        c8.setAttribute("cy",newY);
+        var newtX1 = 192;
+        var newtY1 = 225;
+        t8.setAttribute("x",newtX1);
+        t8.setAttribute("y",newtY1);
+    }
+
+ //   deselect
+
+    function funt1570(){
+    	document.getElementById("c8").style.fill='#CCCCCC';
+        document.getElementById("c2").style.fill='#CCCCCC';
+         }
+
+//select c2 (42)
+function func_S1(){
+    document.getElementById("c2").style.fill = '#B57005';  
+}
+
+//Extract c2 (42)
+    function func_S2(){
+        var newY = 496;
+        var newty = 500;
+        var newX = 500;
+        var newtX = 502;
+              
+        c2.setAttribute("cx", newX);
+        t2.setAttribute("x", newtX);
+        c2.setAttribute("cy", newY);
+        t2.setAttribute("y", newty);
+}
+//select lst index c1(25)
+function func_S3(){
+    document.getElementById("c1").style.fill = '#B57005';
+}
+
+//move to 1st c1(25)
+function func_S4(){
+        var newY2 = 120;
+        var newX2 = 390;
+        c1.setAttribute("cx",newX2);
+        c1.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t1.setAttribute("x",newtX);
+        t1.setAttribute("y",newtY);
+
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l5.setAttribute("x1",newlx1);
+        l5.setAttribute("y1",newly1);
+        l5.setAttribute("x2",newlx2);
+        l5.setAttribute("y2",newly2); 
+
+        var newctX=0;
+        var newctY=0;
+        ct6.setAttribute("x",newctX);
+        ct6.setAttribute("y",newctY);
+
+}
+//deselect c1(25)
+function func_S5(){
+   document.getElementById("c1").style.fill = '#CCCCCC';
+ 
+}
+//select c1(25) & c8(40)
+function func_S6(){
+    document.getElementById("c1").style.fill='#FB2604';
+    document.getElementById("c8").style.fill='#0804FB';
+ 
+}
+
+//exchange c1 & c8.
+function func_S7(){
+        var newX2 = 390;
+        var newY2 = 120;
+        
+        c8.setAttribute("cx",newX2);
+        c8.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t8.setAttribute("x",newtX);
+        t8.setAttribute("y",newtY);
+
+        var newY = 220;
+        var newX = 190; 
+        c1.setAttribute("cx",newX);
+        c1.setAttribute("cy",newY);
+        var newtX1 = 192;
+        var newtY1 = 225;
+        t1.setAttribute("x",newtX1);
+        t1.setAttribute("y",newtY1);
+       }
+
+       //deselect c1&c8
+function func_S8(){
+    document.getElementById("c1").style.fill='#CCCCCC';
+    document.getElementById("c8").style.fill='#CCCCCC';
+ 
+       }
+
+//select c8
+function func_S9(){
+    document.getElementById("c8").style.fill = '#B57005';
+       }
+//Extract c8(40)
+function func_S10(){
+     var newY = 496;
+        var newty = 500;
+        var newX = 450;
+        var newtX = 452;
+              
+        c8.setAttribute("cx", newX);
+        t8.setAttribute("x", newtX);
+        c8.setAttribute("cy", newY);
+        t8.setAttribute("y", newty);
+   
+}
+
+//select c1(25)
+function func_S11(){
+    document.getElementById("c1").style.fill = '#B57005';
+}
+
+//move to first
+function func_S12(){
+    var newY2 = 120;
+        var newX2 = 390;
+        c1.setAttribute("cx",newX2);
+        c1.setAttribute("cy",newY2);
+        var newtX = 392;
+         var newtY = 125;
+        t1.setAttribute("x",newtX);
+        t1.setAttribute("y",newtY);
+
+        var newlx1=1200;
+        var newly1=1200;
+        var newlx2=1201;
+        var newly2=1201;
+        l4.setAttribute("x1",newlx1);
+        l4.setAttribute("y1",newly1);
+        l4.setAttribute("x2",newlx2);
+        l4.setAttribute("y2",newly2); 
+
+        var newctX=0;
+        var newctY=0;
+        ct3.setAttribute("x",newctX);
+        ct3.setAttribute("y",newctY);
+
+    }
+//deselect
+function func_S13(){
+    document.getElementById("c1").style.fill = '#CCCCCC';
+
+}
+//select c1(25)
+function func_S14(){
+    document.getElementById("c1").style.fill = '#B57005';
+}
+//Extract c1
+
+function func_S15(){
+    
+     var newY = 496;
+        var newty =500;
+        var newX = 400;
+        var newtX = 402;
+              
+        c1.setAttribute("cx", newX);
+        t1.setAttribute("x", newtX);
+        c1.setAttribute("cy", newY);
+        t1.setAttribute("y", newty);
+
+        var newctX=0;
+        var newctY=0;
+        ct5.setAttribute("x",newctX);
+        ct5.setAttribute("y",newctY);
+   
+}
+
+    function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20);
+        }
+        setTimeout(func1,1500);
+        setTimeout(func2,2500);
+        setTimeout(func11,3500);
+        setTimeout(func111,4000);
+        setTimeout(func1111,5500);
+        setTimeout(func11111,6500);
+        setTimeout(func3,7500);
+        setTimeout(func33,8500);
+        setTimeout(func333,9500);
+        setTimeout(func3333,10500);
+        setTimeout(func33333,11500);
+        setTimeout(func333333,12500);
+        setTimeout(func73,13500);
+        setTimeout(func83,14500);
+        setTimeout(func4,15500);
+        setTimeout(func44,16500);
+        setTimeout(func444,17500);
+        setTimeout(func4444,18500);
+        setTimeout(func44444,19500);
+        setTimeout(func444440,19500);
+        setTimeout(func444444,20500);
+        setTimeout(func074,21500);
+        setTimeout(func74,22500);
+        setTimeout(func84,23500);
+        setTimeout(func5,24500);
+        setTimeout(func55,25500);
+        setTimeout(func555,26500);
+        setTimeout(func5555,26500);
+        setTimeout(func6,27500);
+        setTimeout(func66,28500);
+        setTimeout(func666,29500);
+        setTimeout(func6660,30500);
+        setTimeout(func6666,31500);
+        setTimeout(func66666,32500);
+        setTimeout(func7,33500);
+        setTimeout(funt7,33500);
+        setTimeout(funt77,34500);
+        setTimeout(funt777,35500);
+        setTimeout(funt770,36500);
+        setTimeout(funt7777,37500);
+        setTimeout(funt77770,38500);
+        setTimeout(funt77777,39500);
+        setTimeout(funt777770,39500);
+        setTimeout(funt1570,40500);
+
+
+        setTimeout(func_S1,41500);
+        setTimeout(func_S2,42500);
+        setTimeout(func_S3,43500);
+        setTimeout(func_S4,44500);
+        setTimeout(func_S5,45500);
+        setTimeout(func_S6,46500);
+        setTimeout(func_S7,47500);
+
+        setTimeout(func_S8,48500);
+        setTimeout(func_S9,49500);
+        setTimeout(func_S10,50500);
+
+        setTimeout(func_S11,51500);
+        setTimeout(func_S12,52500);
+        setTimeout(func_S13,53500);
+        setTimeout(func_S14,54500);
+        setTimeout(func_S15,55500);
+        //setTimeout(reload,42500);
+    }
+
+    function stopAnimation() {
+        if(timerFunction != null){
+            clearInterval(timerFunction);
+            timerFunction = null;
+        }
+    }
+
+    function animate() {
+
+    }
+    
+    function reload(){
+        window.open("HeapSort.html","_self");
+    }
+</script>

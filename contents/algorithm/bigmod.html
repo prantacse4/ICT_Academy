@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/commonhome.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/algo.css">
+
+  <title>ict</title>
+</head>
+<body>
+
+
+  <div class="heading">
+    <div class="namelogo">
+      <a href="../../index.html">
+             <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+          </a>
+          <div class="headmenu">
+            <ul>
+              <li><a href="">Learn</a></li>
+              <li><a href="">Latest</a></li>
+              <li><a href="">Technology</a></li>
+            </ul>
+          </div>
+        </div>
+        <center>
+        <div class="navigation">
+    <div class="menubar">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>  
+        <li><a href="../../Digitalization.html">Digitalization</a></li>
+        <li><a href="" id="active2" >Visualization</a>
+          <ul>
+            <li><a href="sortings.html">Sortings</a></li>
+            <li><a href="graph.html">Graph</a> 
+            </li>
+            <li><a href="other.html">Other</a></li>
+          </ul>
+        </li>
+        <li><a href="">E-Learning</a>
+          <ul>  
+            <li><a href="../../elearning.html">Live Class</a>
+            <li><a href = "../../courses.html">Courses</a></li>
+          </ul>
+        </li> 
+        <li><a href="../../aboutus.html">About Us</a>
+          
+        </li>
+      </ul>
+        
+    </div>
+    </div>
+  </center>
+  </div>
+
+
+
+
+
+<div class="webcontents">
+  
+  <div class="contents clear ">
+	
+	<center>
+	<div class="svg">
+<p id="name">BIGMOD</p>
+ 
+
+		<button id = "btn1"  onclick = "startAnimation();disableButton(this);">Start</button>
+	
+    
+    <br>
+		<svg  width='1000px' height='700px'>
+
+  		<g class='bars' >
+        <rect  id="t1" x="460" y="20" fill='grey' stroke="black" stroke-width="1" width='90' height='40'></rect>
+
+         <text id ="pt1" fill="black" x="480" y="45">2</text>
+         <text fill="black" style="font:14px sans-serif;"  id = "pt11" x="495" y="35">20</text>
+         <text id = "pt12" fill="black" x="520" y="45">%3</text>
+         <text id = "lt1" fill="rgba(0,0,0,0)" x="580" y="45">= 1</text>
+
+
+         <rect  id="t2" x="360" y="100" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l2" x1="500" y1="60" x2="405" y2="100" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt2" fill="rgba(0,0,0,0)" x="380" y="125">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt21" x="395" y="115">10</text>
+         <text id = "pt22" fill="rgba(0,0,0,0)" x="420" y="125">%3</text>
+         <text id = "lt2" fill="rgba(0,0,0,0)" x="480" y="125">= 1</text>
+         <text id = "st2" style="font:40px sans-serif;" fill="rgba(0,0,0,0)" x="345" y="140">*</text>
+
+
+         <text id ="wl20" fill="rgba(0,0,0,0)" x="220" y="120">পাওয়ার জোড় হলে</text>
+         <text id ="wl21" fill="rgba(0,0,0,0)" x="180" y="150">2</text>
+         <text id ="wl22" fill="rgba(0,0,0,0)" x="195" y="140" style="font:14px sans-serif;">p/2</text>
+         <text id ="wl23" fill="rgba(0,0,0,0)" x="235" y="150">and 2</text>
+         <text id ="wl24" fill="rgba(0,0,0,0)" x="270" y="140" style="font:14px sans-serif;">p/2</text>
+
+
+
+         <rect  id="t3" x="560" y="100" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l3" x1="500" y1="60" x2="605" y2="100" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt3" fill="rgba(0,0,0,0)" x="580" y="125">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt31" x="595" y="115">10</text>
+         <text id = "pt32" fill="rgba(0,0,0,0)" x="620" y="125">%3</text>
+         <text id = "lt3" fill="rgba(0,0,0,0)" x="680" y="125">= 1</text>
+
+
+         <rect  id="t4" x="460" y="180" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l4" x1="600" y1="140" x2="505" y2="180" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt4" fill="rgba(0,0,0,0)" x="480" y="205">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt41" x="495" y="195">5</text>
+         <text id = "pt42" fill="rgba(0,0,0,0)" x="520" y="205">%3</text>
+         <text id = "lt4" fill="rgba(0,0,0,0)" x="580" y="205">= 2</text>
+         <text id = "st4" style="font:40px sans-serif;" fill="rgba(0,0,0,0)" x="445" y="220">*</text>
+
+
+         <rect  id="t5" x="660" y="180" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l5" x1="600" y1="140" x2="705" y2="180" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt5" fill="rgba(0,0,0,0)" x="680" y="205">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt51" x="695" y="195">5</text>
+         <text id = "pt52" fill="rgba(0,0,0,0)" x="720" y="205">%3</text>
+         <text id = "lt5" fill="rgba(0,0,0,0)" x="780" y="205">= 2</text>
+
+
+
+         <rect  id="t6" x="560" y="260" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l6" x1="700" y1="220" x2="605" y2="260" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt6" fill="rgba(0,0,0,0)" x="580" y="285">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt61" x="595" y="275">1</text>
+         <text id = "pt62" fill="rgba(0,0,0,0)" x="620" y="285">%3</text>
+         <text id = "lt6" fill="rgba(0,0,0,0)" x="680" y="285">= 2</text>
+         <text id = "st6" style="font:40px sans-serif;" fill="rgba(0,0,0,0)" x="545" y="300">*</text>
+
+ 
+         <text id ="wl60" fill="rgba(0,0,0,0)" x="420" y="280">পাওয়ার বেজোড় হলে</text>
+         <text id ="wl61" fill="rgba(0,0,0,0)" x="380" y="310">2</text>
+         <text id ="wl62" fill="rgba(0,0,0,0)" x="395" y="300" style="font:14px sans-serif;">1</text>
+         <text id ="wl63" fill="rgba(0,0,0,0)" x="435" y="310">and 2</text>
+         <text id ="wl64" fill="rgba(0,0,0,0)" x="470" y="300" style="font:14px sans-serif;">p-1</text>
+
+
+
+         <rect  id="t7" x="760" y="260" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l7" x1="700" y1="220" x2="805" y2="260" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt7" fill="rgba(0,0,0,0)" x="780" y="285">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt71" x="795" y="275">4</text>
+         <text id = "pt72" fill="rgba(0,0,0,0)" x="820" y="285">%3</text>
+         <text id = "lt7" fill="rgba(0,0,0,0)" x="880" y="285">= 1</text>
+
+
+
+         <rect  id="t8" x="660" y="340" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l8" x1="800" y1="300" x2="705" y2="340" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt8" fill="rgba(0,0,0,0)" x="680" y="365">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt81" x="695" y="355">2</text>
+         <text id = "pt82" fill="rgba(0,0,0,0)" x="720" y="365">%3</text>
+         <text id = "lt8" fill="rgba(0,0,0,0)" x="970" y="365">= 1</text>
+         <text id = "st8" style="font:40px sans-serif;" fill="rgba(0,0,0,0)" x="966" y="380">*</text>
+
+
+         <rect  id="t9" x="860" y="340" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l9" x1="800" y1="300" x2="905" y2="340" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt9" fill="rgba(0,0,0,0)" x="880" y="365">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt91" x="895" y="355">2</text>
+         <text id = "pt92" fill="rgba(0,0,0,0)" x="920" y="365">%3</text>
+         <text id = "lt9" fill="rgba(0,0,0,0)" x="600" y="365"> (2*2)%3 = 1</text>
+
+
+         <rect  id="t88" x="560" y="420" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l88" x1="700" y1="380" x2="605" y2="420" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt88" fill="rgba(0,0,0,0)" x="580" y="445">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt881" x="595" y="435">1</text>
+         <text id = "pt882" fill="rgba(0,0,0,0)" x="620" y="445">%3</text>
+         <text id = "lt88" fill="rgba(0,0,0,0)" x="680" y="445">= 2</text>
+
+
+         <rect  id="t99" x="760" y="420" fill='rgba(0,0,0,0)' stroke="rgba(0,0,0,0)" stroke-width="1" width='90' height='40'></rect>
+         <line id="l99" x1="700" y1="380" x2="805" y2="420" stroke="rgba(0,0,0,0)" stroke-width="3" />
+         <text id ="pt99" fill="rgba(0,0,0,0)" x="780" y="445">2</text>
+         <text fill="rgba(0,0,0,0)" style="font:14px sans-serif;"  id = "pt991" x="795" y="435">1</text>
+         <text id = "pt992" fill="rgba(0,0,0,0)" x="820" y="445">%3</text>
+         <text id = "lt99" fill="rgba(0,0,0,0)" x="880" y="445">= 2</text>
+
+  		</g>
+</svg>
+
+
+</div>
+</center>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+	<script>
+        function disableButton(btn1){
+        document.getElementById(btn1.id).disabled = true;
+    }
+    var timerFunction = null;
+    function f1(){
+        document.getElementById("l2").style.stroke = 'grey';
+
+    }
+    function f2(){
+        document.getElementById("t2").style.fill = 'grey';
+        document.getElementById("t2").style.stroke = 'black';
+    }
+    function f3(){
+        document.getElementById("l3").style.stroke = 'grey';
+    }
+    function f4(){
+        document.getElementById("t3").style.fill = 'grey';
+        document.getElementById("t3").style.stroke = 'black';
+    }
+
+    function f5(){
+        document.getElementById("pt2").style.fill = 'black';
+        document.getElementById("pt21").style.fill = 'black';
+        document.getElementById("pt22").style.fill = 'black';
+    }
+    function f6(){
+        document.getElementById("pt3").style.fill = 'black';
+        document.getElementById("pt31").style.fill = 'black';
+        document.getElementById("pt32").style.fill = 'black';
+    }
+    function f7(){
+        document.getElementById("wl20").style.fill = 'grey';
+        document.getElementById("wl21").style.fill = 'grey';
+        document.getElementById("wl22").style.fill = 'grey';
+        document.getElementById("wl23").style.fill = 'grey';
+        document.getElementById("wl24").style.fill = 'grey';
+    }
+    function f8(){
+        document.getElementById("st2").style.fill = 'black';
+    }
+
+
+
+    function f11(){
+        document.getElementById("l4").style.stroke = 'grey';
+
+    }
+    function f21(){
+        document.getElementById("t4").style.fill = 'grey';
+        document.getElementById("t4").style.stroke = 'black';
+    }
+    function f31(){
+        document.getElementById("l5").style.stroke = 'grey';
+    }
+    function f41(){
+        document.getElementById("t5").style.fill = 'grey';
+        document.getElementById("t5").style.stroke = 'black';
+    }
+
+    function f51(){
+        document.getElementById("pt4").style.fill = 'black';
+        document.getElementById("pt41").style.fill = 'black';
+        document.getElementById("pt42").style.fill = 'black';
+    }
+    function f61(){
+        document.getElementById("pt5").style.fill = 'black';
+        document.getElementById("pt51").style.fill = 'black';
+        document.getElementById("pt52").style.fill = 'black';
+    }
+    function f71(){
+        document.getElementById("st4").style.fill = 'black';
+    }
+
+
+
+    function f12(){
+        document.getElementById("l6").style.stroke = 'grey';
+
+    }
+    function f22(){
+        document.getElementById("t6").style.fill = 'grey';
+        document.getElementById("t6").style.stroke = 'black';
+    }
+    function f32(){
+        document.getElementById("l7").style.stroke = 'grey';
+    }
+    function f42(){
+        document.getElementById("t7").style.fill = 'grey';
+        document.getElementById("t7").style.stroke = 'black';
+    }
+
+    function f52(){
+        document.getElementById("pt6").style.fill = 'black';
+        document.getElementById("pt61").style.fill = 'black';
+        document.getElementById("pt62").style.fill = 'black';
+    }
+    function f62(){
+        document.getElementById("pt7").style.fill = 'black';
+        document.getElementById("pt71").style.fill = 'black';
+        document.getElementById("pt72").style.fill = 'black';
+    }
+    function f72(){
+        document.getElementById("wl60").style.fill = 'grey';
+        document.getElementById("wl61").style.fill = 'grey';
+        document.getElementById("wl62").style.fill = 'grey';
+        document.getElementById("wl63").style.fill = 'grey';
+        document.getElementById("wl64").style.fill = 'grey';
+    }
+    function f82(){
+        document.getElementById("st6").style.fill = 'black';
+    }
+
+
+
+
+    function f13(){
+        document.getElementById("l8").style.stroke = 'grey';
+
+    }
+    function f23(){
+        document.getElementById("t8").style.fill = 'grey';
+        document.getElementById("t8").style.stroke = 'black';
+    }
+    function f33(){
+        document.getElementById("l9").style.stroke = 'grey';
+    }
+    function f43(){
+        document.getElementById("t9").style.fill = 'grey';
+        document.getElementById("t9").style.stroke = 'black';
+    }
+
+    function f53(){
+        document.getElementById("pt8").style.fill = 'black';
+        document.getElementById("pt81").style.fill = 'black';
+        document.getElementById("pt82").style.fill = 'black';
+    }
+    function f63(){
+        document.getElementById("pt9").style.fill = 'black';
+        document.getElementById("pt91").style.fill = 'black';
+        document.getElementById("pt92").style.fill = 'black';
+    }
+    function f73(){
+        document.getElementById("st8").style.fill = 'black';
+    }
+
+
+
+
+    function f14(){
+        document.getElementById("l88").style.stroke = 'grey';
+
+    }
+    function f24(){
+        document.getElementById("t88").style.fill = 'grey';
+        document.getElementById("t88").style.stroke = 'black';
+    }
+    function f34(){
+        document.getElementById("l99").style.stroke = 'grey';
+    }
+    function f44(){
+        document.getElementById("t99").style.fill = 'grey';
+        document.getElementById("t99").style.stroke = 'black';
+    }
+
+    function f54(){
+        document.getElementById("pt88").style.fill = 'black';
+        document.getElementById("pt881").style.fill = 'black';
+        document.getElementById("pt882").style.fill = 'black';
+    }
+    function f64(){
+        document.getElementById("pt99").style.fill = 'black';
+        document.getElementById("pt991").style.fill = 'black';
+        document.getElementById("pt992").style.fill = 'black';
+    }
+
+
+
+
+    function fl1(){
+        document.getElementById("t88").style.fill = '#81D4FA';
+        document.getElementById("t88").style.stroke = 'black';
+    }
+    function fl2(){
+        document.getElementById("lt88").style.fill = 'grey';
+    }
+    function fl3(){
+        document.getElementById("lt99").style.fill = 'grey';
+    }
+
+
+
+
+
+
+    function fl11(){
+        document.getElementById("t8").style.fill = '#81D4FA';
+        document.getElementById("t8").style.stroke = 'black';
+    }
+    function fl21(){
+        document.getElementById("lt9").style.fill = 'grey';
+        document.getElementById("t88").style.fill = 'grey';
+        document.getElementById("t88").style.stroke = 'black';
+    }
+    function fl31(){
+        document.getElementById("st8").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("lt8").style.fill = 'grey';
+    }
+
+    function fl41(){
+        document.getElementById("t88").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t88").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt88").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt88").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt881").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt882").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fl51(){
+        document.getElementById("l88").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+    function fl61(){
+        document.getElementById("t99").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t99").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt99").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt99").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt991").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt992").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fl71(){
+        document.getElementById("l99").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+
+
+
+
+    function fa11(){
+        document.getElementById("t7").style.fill = '#81D4FA';
+        document.getElementById("t7").style.stroke = 'black';
+    }
+    function fa21(){
+        document.getElementById("lt7").style.fill = 'grey';
+        document.getElementById("t8").style.fill = 'grey';
+        document.getElementById("t8").style.stroke = 'black';
+    }
+    function fa31(){
+        document.getElementById("st6").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("lt6").style.fill = 'grey';
+        document.getElementById("wl60").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl61").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl62").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl63").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl64").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fa41(){
+        document.getElementById("t8").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t8").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt9").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("lt8").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt8").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt81").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt82").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fa51(){
+        document.getElementById("l8").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+    function fa61(){
+        document.getElementById("t9").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t9").style.stroke = 'rgba(0,0,0,0)';
+        
+        document.getElementById("pt9").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt91").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt92").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fa71(){
+        document.getElementById("l9").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+
+
+
+    function fb11(){
+        document.getElementById("t5").style.fill = '#81D4FA';
+        document.getElementById("t5").style.stroke = 'black';
+    }
+    function fb21(){
+        document.getElementById("lt5").style.fill = 'grey';
+        document.getElementById("t7").style.fill = 'grey';
+        document.getElementById("t7").style.stroke = 'black';
+    }
+    function fb31(){
+        document.getElementById("st4").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("lt4").style.fill = 'grey';
+    }
+
+    function fb41(){
+        document.getElementById("t6").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t6").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt6").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt6").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt61").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt62").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fb51(){
+        document.getElementById("l6").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+    function fb61(){
+        document.getElementById("t7").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t7").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt7").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt7").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt71").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt72").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fb71(){
+        document.getElementById("l7").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+
+
+
+    function fc11(){
+        document.getElementById("t3").style.fill = '#81D4FA';
+        document.getElementById("t3").style.stroke = 'black';
+    }
+    function fc21(){
+        document.getElementById("lt3").style.fill = 'grey';
+        document.getElementById("t5").style.fill = 'grey';
+        document.getElementById("t5").style.stroke = 'black';
+    }
+    function fc31(){
+        document.getElementById("st2").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("lt2").style.fill = 'grey';
+
+        document.getElementById("wl20").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl21").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl22").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl23").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("wl24").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fc41(){
+        document.getElementById("t4").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t4").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt4").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt4").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt41").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt42").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fc51(){
+        document.getElementById("l4").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+    function fc61(){
+        document.getElementById("t5").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t5").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt5").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt5").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt51").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt52").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fc71(){
+        document.getElementById("l5").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+
+
+
+    function fd11(){
+        document.getElementById("t1").style.fill = '#81D4FA';
+        document.getElementById("t1").style.stroke = 'black';
+    }
+    function fd21(){
+        document.getElementById("lt1").style.fill = 'black';
+        document.getElementById("t3").style.fill = 'grey';
+        document.getElementById("t3").style.stroke = 'black';
+    }
+
+
+    function fd31(){
+        document.getElementById("t2").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t2").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt2").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt2").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt21").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt22").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fd41(){
+        document.getElementById("l2").style.stroke = 'rgba(0,0,0,0)';
+    }
+
+
+    function fd51(){
+        document.getElementById("t3").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("t3").style.stroke = 'rgba(0,0,0,0)';
+        document.getElementById("lt3").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt3").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt31").style.fill = 'rgba(0,0,0,0)';
+        document.getElementById("pt32").style.fill = 'rgba(0,0,0,0)';
+    }
+
+    function fd61(){
+        document.getElementById("l3").style.stroke = 'rgba(0,0,0,0)';
+    }
+    function infinity(){
+        document.getElementById("t1").style.fill = '#81D4FA';
+        document.getElementById("t1").style.stroke = 'black';
+    }
+
+
+
+    function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20000000);
+        }
+        
+        setTimeout(f1,1300);
+        setTimeout(f2,2000);
+        setTimeout(f3,2700);
+        setTimeout(f4,3400);
+        setTimeout(f5,4100);
+        setTimeout(f6,4900);
+        setTimeout(f7,5800);
+        setTimeout(f8,7000);
+
+        setTimeout(f11,7800);
+        setTimeout(f21,8500);
+        setTimeout(f31,9200);
+        setTimeout(f41,9900);
+        setTimeout(f51,10600);
+        setTimeout(f61,11300);
+        setTimeout(f71,12800);
+
+        setTimeout(f12,13700);
+        setTimeout(f22,14400);
+        setTimeout(f32,15100);
+        setTimeout(f42,15900);
+        setTimeout(f52,16600);
+        setTimeout(f62,17300);
+        setTimeout(f72,18000);
+        setTimeout(f82,19400);
+
+        setTimeout(f13,20200);
+        setTimeout(f23,20900);
+        setTimeout(f33,21600);
+        setTimeout(f43,22300);
+        setTimeout(f53,23000);
+        setTimeout(f63,23700);
+        setTimeout(f73,24900);
+
+
+        setTimeout(f14,25900);
+        setTimeout(f24,26600);
+        setTimeout(f34,27300);
+        setTimeout(f44,28000);
+        setTimeout(f54,28700);
+        setTimeout(f64,29400);
+
+        setTimeout(fl1,30500);
+        setTimeout(fl2,31300);
+        setTimeout(fl3,32100);
+        setTimeout(fl11,32900);
+        setTimeout(fl21,33700);
+        setTimeout(fl31,34500);
+        setTimeout(fl41,35300);
+        setTimeout(fl51,36100);
+        setTimeout(fl61,36900);
+        setTimeout(fl71,37600);
+
+
+
+        setTimeout(fa11,38400);
+        setTimeout(fa21,39200);
+        setTimeout(fa31,40000);
+        setTimeout(fa41,40800);
+        setTimeout(fa51,41600);
+        setTimeout(fa61,42400);
+        setTimeout(fa71,43200);
+
+
+        setTimeout(fb11,44000);
+        setTimeout(fb21,44800);
+        setTimeout(fb31,45600);
+        setTimeout(fb41,46400);
+        setTimeout(fb51,47200);
+        setTimeout(fb61,48000);
+        setTimeout(fb71,48800);
+
+        setTimeout(fc11,49600);
+        setTimeout(fc21,50400);
+        setTimeout(fc31,51200);
+        setTimeout(fc41,52000);
+        setTimeout(fc51,52800);
+        setTimeout(fc61,53600);
+        setTimeout(fc71,54400);
+
+
+        setTimeout(fd11,55200);
+        setTimeout(fd21,56000);
+        setTimeout(fd31,56800);
+        setTimeout(fd41,57600);
+        setTimeout(fd51,59200);
+        setTimeout(fd61,59200);
+
+        setTimeout(infinity,5920000000);
+
+
+
+    }
+
+    function stopAnimation() {
+        if(timerFunction != null){
+            clearInterval(timerFunction);
+            timerFunction = null;
+        }
+    }
+
+    function animate() {
+        var rect = document.getElementById("rect");
+
+    }
+    
+    
+</script>
+	
+    

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/commonhome.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/algo.css">
+
+  <title>ict</title>
+</head>
+<body>
+
+
+<div class="heading">
+    <div class="namelogo">
+      <a href="../../index.html">
+             <img src="img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+          </a>
+          <div class="headmenu">
+            <ul>
+              <li><a href="">Learn</a></li>
+              <li><a href="">Latest</a></li>
+              <li><a href="">Technology</a></li>
+            </ul>
+          </div>
+        </div>
+        <center>
+        <div class="navigation">
+    <div class="menubar">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>  
+        <li><a href="../../Digitalization.html">Digitalization</a></li>
+        <li><a href="" id="active2" >Visualization</a>
+          <ul>
+            <li><a href="sortings.html">Sortings</a></li>
+            <li><a href="graph.html">Graph</a> 
+            </li>
+            <li><a href="other.html">Other</a></li>
+          </ul>
+        </li>
+        <li><a href="">E-Learning</a>
+          <ul>  
+            <li><a href="../../elearning.html">Live Class</a>
+            <li><a href = "../../courses.html">Courses</a></li>
+          </ul>
+        </li> 
+        <li><a href="../../aboutus.html">About Us</a>
+          
+        </li>
+      </ul>
+        
+    </div>
+    </div>
+  </center>
+  </div>
+
+
+
+
+
+<div class="webcontents">
+  
+  <div class="contents clear ">
+    
+    <center>
+    <div class="svg">
+        <p id="name">DFS Algorithm Visualization</p>
+        <button id = "btn1"  onclick = "disableButton(this);startAnimation();">Start</button>
+
+    
+    <br>
+    <svg  width='700px' height='450px'>
+
+      <g class='bars' >
+         <line id="st" x1="334" y1="50" x2="234" y2="120" style="stroke:grey;stroke-width:4" />
+        <line id="su" x1="334" y1="50" x2="434" y2="120" style="stroke:grey;stroke-width:4" />
+        <line id="sx" x1="334" y1="50" x2="334" y2="310" style="stroke:grey;stroke-width:4" />
+        <line id="uv" x1="434" y1="120" x2="234" y2="230" style="stroke:grey;stroke-width:4" />
+        <line id="vx" x1="234" y1="230" x2="334" y2="310" style="stroke:grey;stroke-width:4" />
+        <line id="xw" x1="334" y1="310" x2="434" y2="230" style="stroke:grey;stroke-width:4" />
+        
+      <circle id="s" cx="334" cy="50" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="t" cx="234" cy="120" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="u" cx="434" cy="120" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="v" cx="234" cy="230" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+      <circle id="w" cx="434" cy="230" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+      <circle id="x" cx="334" cy="310" r="25" stroke="grey" stroke-width="2" fill="#298229" /> 
+
+
+
+      <text x="334" y="55" style="text-anchor: middle">S</text>
+      <text x="234" y="125" style="text-anchor: middle">T</text>
+      <text x="434" y="125" style="text-anchor: middle">U</text>
+      <text x="234" y="235" style="text-anchor: middle">V</text>
+      <text x="434" y="235" style="text-anchor: middle">W</text>
+      <text x="334" y="315" style="text-anchor: middle">X</text>
+         
+        </g>
+    
+      </g>
+</svg>
+
+</div>
+
+</center>
+</div>
+</div>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<div class="footer">
+    <img src="img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
+
+<script>
+    var timerFunction = null;
+    function func1(){
+      document.getElementById("s").style.fill = 'grey';
+    }
+    function func2(){
+      document.getElementById("t").style.fill = 'grey';
+    }
+    function func4(){
+      document.getElementById("t").style.fill = 'black';
+    }
+    function func5(){
+      document.getElementById("st").style.stroke = 'black';
+    }
+
+
+
+    function func6(){
+      document.getElementById("x").style.fill = 'grey';
+    }
+    function func8(){
+      document.getElementById("v").style.fill = 'grey';
+    }
+    function func9(){
+      document.getElementById("u").style.fill = 'grey';
+    }
+    function func10(){
+      document.getElementById("u").style.fill = 'black';
+    }
+    function func10b(){
+      document.getElementById("uv").style.stroke = 'black';
+    }
+    function func11(){
+      document.getElementById("v").style.fill = 'black';
+    }
+     function func11b(){
+      document.getElementById("vx").style.stroke = 'black';
+    }
+    function func12(){
+      document.getElementById("w").style.fill = 'grey';
+    }
+    function func13(){
+      document.getElementById("w").style.fill = 'black';
+    }
+    function func13b(){
+      document.getElementById("xw").style.stroke = 'black';
+    }
+    function func14(){
+      document.getElementById("x").style.fill = 'black';
+    }
+    function func14b(){
+      document.getElementById("sx").style.stroke = 'black';
+    }
+    function func15(){
+      document.getElementById("s").style.fill = 'black';
+    }
+    
+
+
+
+
+
+
+
+
+    function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20);
+        }
+        setTimeout(func1,1500);
+        setTimeout(func2,2500);
+        setTimeout(func4,3500);
+        setTimeout(func5,4000);
+
+        setTimeout(func6,5000);
+        setTimeout(func8,6500);
+        setTimeout(func9,8000);
+        setTimeout(func10,9500);
+        setTimeout(func10b,10000);
+        setTimeout(func11,11500);
+        setTimeout(func11b,12000);
+        setTimeout(func12,14000);
+        setTimeout(func13,15500);
+        setTimeout(func13b,16000);
+        setTimeout(func14,17500);
+        setTimeout(func14b,18000);
+        setTimeout(func15,18500);
+
+        
+    }
+
+
+
+    function animate() {
+
+    }
+    
+    
+</script>
+
+
+
+</div>
+</center>
+
+
+
+<script>
+        function disableButton(btn1){
+        document.getElementById(btn1.id).disabled = true;
+    }
+
+    
+  </script>
+

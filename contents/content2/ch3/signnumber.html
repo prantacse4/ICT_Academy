@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="../../../css/commonhome.css">
+	<link rel="stylesheet" type="text/css" href="../css/cloud2.css">
+	<title>ict</title>
+</head>
+<body>
+
+	<div class="heading">
+		<div class="namelogo">
+			<a href="../../../index.html">
+        	   <img src="../../../img/logo.png" id="logo_img" alt="ictacademy" title="ictacademy">
+        	</a>
+        	<div class="headmenu">
+        		<ul>
+        			<li><a href="">Learn</a></li>
+        			<li><a href="">Latest</a></li>
+        			<li><a href="">Technology</a></li>
+        		</ul>
+        	</div>
+        </div>
+        <center>
+        <div class="navigation">
+		<div class="menubar">
+			<ul>
+				<li><a href="../../../index.html">Home</a></li>	
+				<li><a href="../../../Digitalization.html">Digitalization</a></li>
+				<li><a  href="../../algorithm/visualization.html">Visualization</a>
+					<ul>
+						<li><a href="../../algorithm/sortings.html">Sortings</a></li>
+						<li><a href="../../algorithm/graph.html">Graph</a> 
+						</li>
+						<li><a href="../../algorithm/other.html">Other</a></li>
+					</ul>
+				</li>
+				<li><a href="">E-Learning</a>
+					<ul>	
+						<li><a href="../../../elearning.html">Live Class</a>
+						<li><a href = "../../../courses.html">Courses</a></li>
+					</ul>
+				</li>	
+				<li><a href="../../../aboutus.html">About Us</a>
+				</li>
+			</ul>
+				
+		</div>
+		</div>
+	</center>
+	</div>	
+
+
+<div class="webcontents">
+	
+	<div class="contents clear ">
+		<div class="topic1 clear">
+			<div class="t1">
+				<h2>চিহ্নযুক্ত সংখ্যা </h2>
+					<div class="insidet1 clear">
+					<p>যখন কোন সংখ্যার পূর্বে ধনাত্মক(+) বা ঋণাত্মক(-) চিহ্ন থাকে তখন সেই সংখ্যাকে চিহ্নযুক্ত সংখ্যা বা সাইনড নম্বর বলা হয়।<br>
+
+বাইনারি পদ্ধতিতে চিহ্নযুক্ত সংখ্যা বুঝানোর জন্য প্রকৃত মানের পূর্বে একটি অতিরিক্ত বিট যোগ করা হয়। এ অতিরিক্ত বিটকে চিহ্ন বিট বলে। চিহ্ন বিট 0 হলে সংখ্যাটি ধনাত্মক এবং চিহ্নবিট ১ হলে সংখ্যাটিকে ঋণাত্মক ধরা হয়।
+ 
+
+
+
+<br><br>
+<img src="../img/ch3/sign1.png" height="250px" width="900px"><br>
+
+</p><p><br><b>
+চিহ্নযুক্ত সংখ্যার উপস্থাপনাঃ</b> কম্পিউটার সিস্টেমে চিহ্ন যুক্ত সংখ্যা উপস্থাপনার জন্য তিনটি পদ্ধতি আছে। যথাঃ
+<br>
+১।   প্রকৃত মান গঠন (Signed magnitude form)<br>
+২।  ১ এর পরিপূরক গঠন (1’s Complement form)<br>
+৩। ২ এর পরিপূরক গঠন (2’s Complement form)<br>
+
+এক্ষেত্রে তিনটি পদ্ধতিতেই ধনাত্মক সংখ্যার উপস্থাপনা একই। অর্থাৎ ধনাত্মক সংখ্যার ক্ষেত্রে চিহ্ন বিট ছাড়া বাকি অংশটি সংখ্যার মান জ্ঞাপন করে। তবে ঋণাত্মক সংখ্যার ক্ষেত্রে উপস্থাপনা ভিন্ন ভিন্ন হয়।
+<br>
+***<b>Note:</b> উপরিউক্ত তিনটি পদ্ধতিতে চিহ্ন যুক্ত সংখ্যা উপস্থাপনার জন্য রেজিস্টার সম্পর্কে প্রাথমিক ধারণা থাকতে হবে। রেজিস্টার হলো একগুচ্ছ  ফ্লিপ-ফ্লপ এবং গেইটের সমন্বয়ে গঠিত সার্কিট যা অস্থায়ী মেমরি হিসেবে কাজ করে। এর প্রত্যেকটি ফ্লিপ-ফ্লপ একটি করে বাইনারি বিট সংরক্ষণ করতে পারে। n বিটের একটি রেজিস্টার n বিটের বাইনারি তথ্য ধারণ করতে পারে। ৮-বিট রেজিস্টার, ১৬- বিট রেজিস্টার, ৩২-বিট রেজিস্টার ইত্যাদি- যারা যথাক্রমে ৮, ১৬, ৩২ বিট তথ্য ধারণ করতে পারবে। 
+<br>
+প্রকৃত মান গঠন (Signed magnitude form):
+প্রকৃত মান গঠন প্রক্রিয়ায় +5 এবং -5  কে ৮-বিট রেজিস্টারে উপস্থাপন। ৮-বিট রেজিস্টারের ক্ষেত্রে সর্বডানের ৭-বিট হল ডেটা বিট এবং সর্ব বামের বিটটি চিহ্ন বিট। এক্ষেত্রে ধনাত্মক চিহ্নের জন্য চিহ্ন বিট 0 এবং ঋণাত্মক চিহ্নের জন্য চিহ্ন বিট 1।
+ <br>
+<img src="../img/ch3/sign2.jpg" height="250px" width="900px">
+
+</p><p><br><b>১ এর পরিপূরক গঠন (1’s Complement form):</b><br>
+১ এর পরিপূরক গঠন প্রক্রিয়ায় +5 এবং -5 কে ৮-বিট রেজিস্টারে উপস্থাপন। ধনাত্মক চিহ্নযুক্ত সংখ্যার ক্ষেত্রে ধনাত্মক চিহ্নের জন্য চিহ্ন বিট 0 এবং বাকি ৭-বিট ব্যবহৃত হয় সংখ্যার প্রকৃত মানের জন্য। ঋণাত্মক চিহ্নযুক্ত সংখ্যার মান নির্ণয়ের জন্য ধনাত্মক চিহ্নযুক্ত সংখ্যার মান নির্ণয় করতে হয়। তারপর চিহ্ন-বিট সহ সবগুলো বিটকে উল্টিয়ে(অর্থাৎ 0 থাকলে ১ এবং ১ থাকলে 0 হয়) ঋণাত্মক চিহ্নযুক্ত সংখ্যার মান নির্নয় করা হয়।
+ <br>
+ <img src="../img/ch3/sign3.jpg" height="250px" width="900px"><br>
+
+</p><p><br><b>
+বিপরীতকরণ/নিগেশন</b><br>
+বিপরীতকরণ/নিগেশন বলতে কোন ধনাত্মক সংখ্যাকে ঋনাত্মক এবং ঋনাত্মক সংখ্যাকে ধনাত্মক করাকে বোঝায়। 2's complement এ বিপরীতকরণ/নিগেশন ব্যবহার করা হয়।<br>
+
+
+
+
+
+</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="latest clear">
+			<div class="newsfeed">
+				<div class="head">
+					<h2>সংখ্যা পদ্ধতি</h2>
+				</div>
+				<div class="para">
+					<p><a href="topic1.html">যে পদ্ধতির মাধ্যমে সংখ্যা প্রকাশ ও গণনা করা হয় তাই সংখ্যা  ... </a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>বাইনারি সংখ্যার ব্যবহার </h2>
+				</div>
+				<div class="para">
+					<p><a href="whybinary.html">বাইনারি সংখ্যা পদ্ধতিতে ০ ও ১ এ দুইটি অঙ্ক ব্যবহার করা ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>সংখ্যা পদ্ধতির রুপান্তর</h2>
+				</div>
+				<div class="para">
+					<p><a href="conversion.html">আমরা জানি যে কম্পিউটার 0 ও 1 ছাড়া কিছুই বুঝে না। ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>ডেসিমেল সংখ্যাকে অন্য সংখ্যায় রূপান্তর</h2>
+				</div>
+				<div class="para">
+					<p><a href="decimaltoall.html">ডেসিমেল সংখ্যাকে বাইনারি সংখ্যায়, ডেসিমেল সংখ্যাকে অক্টাল সংখ্যায় ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>বাইনারি সংখ্যাকে অন্য সংখ্যায় রূপান্তর</h2>
+				</div>
+				<div class="para">
+					<p><a href="binarytoall.html">বাইনারি সংখ্যাকে ডেসিমেল সংখ্যায় ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>অক্টাল সংখ্যাকে অন্য সংখ্যায় রূপান্তর</h2>
+				</div>
+				<div class="para">
+					<p><a href="octaltoall.html">অক্টাল সংখ্যাকে ডেসিমেল সংখ্যায় রূপান্তর...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>হেক্সাডেসিমেল সংখ্যাকে অন্য সংখ্যায় রূপান্তর </h2>
+				</div>
+				<div class="para">
+					<p><a href="hexatoall.html">হেক্সাডেসিমেল সংখ্যাকে ডেসিমেল সংখ্যায়...</a></p>
+				</div>
+			</div>
+
+
+			<div class="newsfeed">
+				<div class="head">
+					<h2>বাইনারি যোগ-বিয়োগ</h2>
+				</div>
+				<div class="para">
+					<p><a href="binarysum.html">বাইনারি যোগ দশমিক পদ্ধতির যোগের অনুরূপ। বাইনারি যোগের ক্ষেত্রে...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>চিহ্নযুক্ত সংখ্যা</h2>
+				</div>
+				<div class="para">
+					<p><a href="signnumber.html">যখন কোন সংখ্যার পূর্বে ধনাত্মক(+) বা ঋণাত্মক(-) চিহ্ন থাকে তখন...</a></p>
+				</div>
+			</div>
+
+			<div class="newsfeed">
+				<div class="head">
+					<h2>২ এর পরিপূরক</h2>
+				</div>
+				<div class="para">
+					<p><a href="complement2.html">২ এর পরিপূরক গঠন প্রক্রিয়ায় +5 এবং -5 কে ৮-বিট রেজিস্টারে উপস্থাপন...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>কম্পিউটার কোড</h2>
+				</div>
+				<div class="para">
+					<p><a href="code.html">কম্পিউটার সিস্টেমি ব্যবহৃত প্রকিটি বর্ণ,অঙ্ক,প্রতীক বা বিশেষ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>বুলিয়ান অ্যালজেবরা</h2>
+				</div>
+				<div class="para">
+					<p><a href="algebra1.html">গণিত ও যুক্তির মধ্যে যোগসূত্র স্থাপন করে যে অ্যালজেবরা তাকে বুলিয়ান অ্যালজেবরা ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>সত্যক সারণি ও লজিক গেইট</h2>
+				</div>
+				<div class="para">
+					<p><a href="logicgate.html">যে সকল টেবিল বা সারণির মাধ্যমে বিভিন্ন গেইটের ফলাফল প্রকাশ ...</a></p>
+				</div>
+			</div>
+
+			<div class="newsfeed">
+				<div class="head">
+					<h2>এনকোডার ও ডিকোডার</h2>
+				</div>
+				<div class="para">
+					<p><a href="encoderdecoder.html">এনকোডার এক ধরনের সমবায় সার্কিট বা ডিজিটাল বর্তনী যা মানুষের ...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>অ্যাডার</h2>
+				</div>
+				<div class="para">
+					<p><a href="adder.html">যে সমবায় সার্কিট দ্বারা যোগ করা যায় তাকে অ্যাডার বা যোগের বর্তনী বলে...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>রেজিস্টার</h2>
+				</div>
+				<div class="para">
+					<p><a href="register.html">রেজিস্টার হলো একগু‛ছ ফ্লিপ-ফ্লপ এবং গেইটের সমন্বয়ে গঠিত সার্কিট যা...</a></p>
+				</div>
+			</div>
+			<div class="newsfeed">
+				<div class="head">
+					<h2>কাউন্টার এবং ফ্লিপ ফ্লপ</h2>
+				</div>
+				<div class="para">
+					<p><a href="counter.html">কাউন্টার হলো এমন একটি সিকুয়েন্সিয়াল ডিজিটাল ইলেকট্রনিক্স সার্কিট ...</a></p>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+<div class="footer">
+    <img src="../../../img/logo2.png">
+    <h2>U N I V E R S I T Y  OF  B A R I S A L</h2>
+    <a href="https://www.facebook.com/angrypranta"><p>© 2019 :: BU - CSE</p></a>
+</div>
+
+</body>
+</html>
